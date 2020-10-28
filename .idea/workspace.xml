@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Stations.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Stations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmCatalogueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmCatalogueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/controller/SkmCatalogueControllerReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/controller/SkmCatalogueControllerReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +102,7 @@
       <updated>1603811699137</updated>
       <workItem from="1603811702233" duration="19411000" />
       <workItem from="1603878780488" duration="15999000" />
-      <workItem from="1603896807061" duration="11891000" />
+      <workItem from="1603896807061" duration="12598000" />
     </task>
     <servers />
   </component>

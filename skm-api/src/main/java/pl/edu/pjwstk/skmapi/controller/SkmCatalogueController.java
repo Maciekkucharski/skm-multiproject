@@ -32,10 +32,12 @@ public class SkmCatalogueController {
     public List<Object> skm() {
         return simulation.getSkmsIDs();
     }
+
     @GetMapping("/skm/{id}")
     public Skm skmID(@PathVariable int id) {
         return simulation.getSkms().get(id);
     }
+
     @GetMapping("/skm/{id}/compartment")
     public List<Object> skmConpartment(@PathVariable int id) {
         return simulation.getCompartments(id);
