@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jSyHSIebCEMxO5LHF1RwVSG6um" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-client\src\main\java\pl\edu\pjwstk\skmclient\model" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SkmApiApplication">
+    <configuration name="SkmApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="skm-multiproject.skm-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.pjwstk.skmapi.SkmApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SkmClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="skm-multiproject.skm-client.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.pjwstk.skmclient.SkmClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="" />
+      <created>1603811699137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603811699137</updated>
+      <workItem from="1603811702233" duration="19411000" />
+      <workItem from="1603878780488" duration="15999000" />
+      <workItem from="1603896807061" duration="9470000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser" timestamp="1603884521273">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1603884521273" />
+    <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603894390638">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603894390638" />
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1603907356927">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1603907356927" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1603896793510">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
+    <state x="671" y="168" key="refactoring.ChangeSignatureDialog" timestamp="1603824358548">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="671" y="168" key="refactoring.ChangeSignatureDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603824358548" />
+  </component>
+</project>

@@ -1,0 +1,5 @@
+rootProject.name = 'skm-multiproject'
+
+include 'skm-api'
+include 'skm-client'
+

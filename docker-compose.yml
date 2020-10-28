@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jazapi:
+    build: ./skm-api
+    ports:
+    - "11111:11111"
+  jazclient:
+    build: ./skm-client
+    ports:
+    - "22222:22222"
