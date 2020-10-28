@@ -27,5 +27,6 @@ public class Human {
         return endpoint;
     }
 
-
+    public Human() {
+    }
 }

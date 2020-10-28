@@ -10,14 +10,23 @@ import java.util.List;
 
 @RestController
 public class SkmCatalogueControllerReader {
-    private final String URI = "http://skmapi:11111/";
+    private final String URI = "http://skmapi:11111";
+    private RestTemplate template = new RestTemplate();
 
 
     @GetMapping("/")
     public List<Skm> getCatalogue(){
-        RestTemplate template =new RestTemplate();
-        Skm[] catalogue =template.getForObject(URI,Skm[].class);
+        Skm[] catalogue = template.getForObject(URI,Skm[].class);
         return Arrays.asList(catalogue);
     }
+
+//    @GetMapping("/")
+//    public String status() {
+//        List<Integer> result = Arrays.asList(template.getForObject(URI, Integer[].class));
+//
+//        return result.toString();
+//    }
+
+
 
 }

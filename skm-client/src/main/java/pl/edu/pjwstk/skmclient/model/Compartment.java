@@ -38,5 +38,6 @@ public class Compartment {
         return;
     }
 
-
+    public Compartment() {
+    }
 }

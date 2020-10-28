@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="" />
+    <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/controller/SkmCatalogueControllerReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/controller/SkmCatalogueControllerReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Compartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Compartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jSyHSIebCEMxO5LHF1RwVSG6um" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,6 +58,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_2" />
@@ -84,7 +97,7 @@
       <updated>1603811699137</updated>
       <workItem from="1603811702233" duration="19411000" />
       <workItem from="1603878780488" duration="15999000" />
-      <workItem from="1603896807061" duration="9470000" />
+      <workItem from="1603896807061" duration="11093000" />
     </task>
     <servers />
   </component>
@@ -92,10 +105,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser" timestamp="1603884521273">
+    <state x="521" y="198" key="#Plugins" timestamp="1603910214406">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1603884521273" />
+    <state x="521" y="198" key="#Plugins/0.0.1858.1080@0.0.1858.1080" timestamp="1603910214406" />
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser" timestamp="1603910859120">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1603910859120" />
     <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603894390638">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -140,5 +157,9 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="671" y="168" key="refactoring.ChangeSignatureDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603824358548" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603910198534">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1603910198534" />
   </component>
 </project>

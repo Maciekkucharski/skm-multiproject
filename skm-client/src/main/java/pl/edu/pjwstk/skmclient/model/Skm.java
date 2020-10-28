@@ -61,6 +61,9 @@ public class Skm {
         this.capability = capability;
     }
 
+    public Skm() {
+    }
+
     public int countPeople() {
         int iterator = 0;
         for (Compartment compartment : compartments) {
