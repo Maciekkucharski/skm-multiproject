@@ -95,8 +95,39 @@ public class Skm {
             return false;
     }
 
+    public void moveSkm() {
+        if (isWaiting()) {
+            return;
+        } else {
+            this.station = this.station.move(this.toGdynia);
 
+            if (this.station.isFirst() || this.station.isLast()) {
+                this.pauseCount += 2;
+            }
+            int randAmount = random.nextInt(8 - 2) + 2;
+            for (int i = 0; i < randAmount; i++) {
+                this.addPassengers();
+            }
+            this.removePassengers();
+        }
+        return;
+    }
 
+    public void addPassengers() {
+        for (Compartment compartment : compartments) {
+            if (compartment.addHuman(new Human(this.station.randomNextStation(this)))) {
+                break;
+            }
+
+        }
+    }
+
+    public void removePassengers() {
+        for (int i = 0; i < compartments.size(); i++) {
+
+            compartments.get(i).removeHuman(new Human(this.station));
+        }
+    }
 
 
 }
