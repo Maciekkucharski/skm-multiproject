@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Simulation {
     private List<Skm> skms;
-    private List<Integer> skmIDs;
+    private List<Long> skmIDs;
     private Random random = new Random();
 
     public Simulation(int x, int y, int z) {
@@ -16,7 +16,7 @@ public class Simulation {
         List<Stations> StartingStationList = convertSetToList(startingStationsSet);
         this.skmIDs = new ArrayList<>();
         for (int i = 0; i < x; i++) {
-            this.skmIDs.add(i);
+            this.skmIDs.add(new Long(i));
         }
         this.skms = new ArrayList<>();
         for (int i = 0; i < x; i++) {

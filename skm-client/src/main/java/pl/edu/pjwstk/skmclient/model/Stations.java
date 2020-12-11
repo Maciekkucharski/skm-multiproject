@@ -25,32 +25,5 @@ public enum Stations {
     Stations() {
     }
 
-    public boolean isLast() {
-        return this.ordinal() == (number.length - 1);
-    }
 
-    public boolean isFirst() {
-        return this.ordinal() == 0;
-    }
-
-    public Stations move(boolean toGdynia) {
-        if (!toGdynia) {
-            int stationIndex = this.ordinal() + 1;
-            return number[stationIndex];
-        } else {
-            int stationIndex = this.ordinal() - 1;
-            return number[stationIndex];
-        }
-    }
-
-    public Stations randomNextStation(Skm skm) {
-        int tempStation = skm.getStation().ordinal();
-        if (!skm.getToGdynia()) {
-            int endpointIndex = rand.nextInt(15 - tempStation) + tempStation;
-            return number[endpointIndex];
-        } else {
-            int endpointIndex = rand.nextInt(tempStation);
-            return number[endpointIndex];
-        }
-    }
 }

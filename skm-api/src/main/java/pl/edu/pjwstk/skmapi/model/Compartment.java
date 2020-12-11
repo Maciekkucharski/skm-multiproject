@@ -1,10 +1,20 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import pl.edu.pjwstk.skmapi.services.DbEntity;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+@Entity
+@Table(name = "compartments")
+public class Compartment implements DbEntity {
 
-public class Compartment {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private int limit;
+    @OneToMany(mappedBy = "compartment", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Human> humans;
 
 
@@ -14,11 +24,6 @@ public class Compartment {
 
     public void setHumans(List<Human> humans) {
         this.humans = humans;
-    }
-
-    public Compartment(int limit) {
-        this.humans = new ArrayList<>();
-        this.limit = limit;
     }
 
     public boolean addHuman(Human human) {
@@ -39,4 +44,17 @@ public class Compartment {
     }
 
 
+    public Compartment() {
+    }
+
+    public Compartment(int limit) {
+        this.humans = new ArrayList<>();
+        this.limit = limit;
+    }
+
+
+    @Override
+    public Long getId() {
+        return null;
+    }
 }

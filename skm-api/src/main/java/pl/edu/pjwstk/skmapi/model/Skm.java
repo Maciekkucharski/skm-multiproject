@@ -1,14 +1,23 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import pl.edu.pjwstk.skmapi.services.DbEntity;
 
+import javax.persistence.*;
 import java.util.List;
 import java.util.Random;
 
-public class Skm {
+@Entity
+@Table(name = "skms")
+public class Skm implements DbEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     public int pauseCount = 0;
     public Boolean toGdynia;
-    public int ID;
+    @OneToMany(mappedBy = "skm", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Compartment> compartments;
+
     public Stations station;
     public int capability;
     private Random random = new Random();
@@ -21,13 +30,7 @@ public class Skm {
         this.toGdynia = toGdynia;
     }
 
-    public Integer getID() {
-        return ID;
-    }
 
-    public void setID(Integer ID) {
-        this.ID = ID;
-    }
 
     public List<Compartment> getCompartments() {
         return compartments;
@@ -53,9 +56,9 @@ public class Skm {
         this.capability = capability;
     }
 
-    public Skm(Boolean toGdynia, int ID, List<Compartment> compartments, Stations station, int capability) {
+    public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station, int capability) {
         this.toGdynia = toGdynia;
-        this.ID = ID;
+        this.id = ID;
         this.compartments = compartments;
         this.station = station;
         this.capability = capability;
@@ -90,6 +93,27 @@ public class Skm {
             return true;
         } else
             return false;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public int getPauseCount() {
+        return pauseCount;
+    }
+
+    public void setPauseCount(int pauseCount) {
+        this.pauseCount = pauseCount;
+    }
+
+
+    public Random getRandom() {
+        return random;
+    }
+
+    public void setRandom(Random random) {
+        this.random = random;
     }
 
     public void moveSkm() {
@@ -127,4 +151,12 @@ public class Skm {
     }
 
 
+
+    @Override
+    public Long getId() {
+        return null;
+    }
+
+    public Skm() {
+    }
 }

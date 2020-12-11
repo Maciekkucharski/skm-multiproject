@@ -8,3 +8,13 @@ services:
     build: ./skm-client
     ports:
     - "22222:22222"
+  traindb:
+    build: ./db
+    ports:
+      - "3333:3333"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd
+      MYSQL_DATABASE: skmcontrol
+      MYSQL_USER: skmcontroller
+      MYSQL_PASSWORD: pwd

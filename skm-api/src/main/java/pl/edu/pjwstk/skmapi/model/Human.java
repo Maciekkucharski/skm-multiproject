@@ -1,8 +1,17 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Human {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     String name;
     String surname;
     Stations endpoint;
@@ -48,5 +57,8 @@ public class Human {
     @Override
     public int hashCode() {
         return Objects.hash(endpoint);
+    }
+
+    public Human() {
     }
 }
