@@ -14,17 +14,18 @@ public class Skm implements DbEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    public int pauseCount = 0;
+    public int pauseCount;
     @Column
     public Boolean toGdynia;
 
     @OneToMany(mappedBy = "skm", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Compartment> compartments;
 
+    @Column(name = "station")
     public Stations station;
     @Column
     public int capability;
-
+    @Transient
     private Random random = new Random();
 
     public Boolean getToGdynia() {
@@ -110,14 +111,6 @@ public class Skm implements DbEntity {
         this.pauseCount = pauseCount;
     }
 
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
 
     public void moveSkm() {
         if (isWaiting()) {

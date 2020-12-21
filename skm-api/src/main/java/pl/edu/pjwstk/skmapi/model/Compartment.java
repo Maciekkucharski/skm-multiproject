@@ -13,7 +13,7 @@ public class Compartment implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
+    @Column(name = "limitation")
     private int limit;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "skm_id")

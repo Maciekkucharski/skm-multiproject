@@ -1,6 +1,6 @@
 package pl.edu.pjwstk.skmapi.services;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+
 import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 

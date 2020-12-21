@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-compartment.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-skm.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,23 +14,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/db/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/CompartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/CompartmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SkmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SkmService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/data/init-data-compartment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-compartment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/data/init-data-insert-skm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-skm.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/db.changelog-master.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/table/init-tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-compartment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-compartment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-skm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-insert-skm.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,22 +120,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\java zaawansowana\skm-multiproject" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-client\src\main\java\pl\edu\pjwstk\skmclient\model" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-client" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\data" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\table" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data\sql" />
+      <recent name="H:\java zaawansowana\skm-multiproject" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-client\src\main\java\pl\edu\pjwstk\skmclient\model" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,6 +311,7 @@
       <workItem from="1608472497618" duration="8626000" />
       <workItem from="1608489722306" duration="2729000" />
       <workItem from="1608492461055" duration="15693000" />
+      <workItem from="1608581763349" duration="5749000" />
     </task>
     <servers />
   </component>
@@ -344,10 +339,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1607623537700" />
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1608491383886">
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1608583812950">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1608491383886" />
+    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1608583812950" />
     <state width="1815" height="788" key="GridCell.Tab.0.bottom" timestamp="1608510091475">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -380,10 +375,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
-    <state x="469" y="98" key="SettingsEditor" timestamp="1608482041152">
+    <state x="469" y="98" key="SettingsEditor" timestamp="1608581935382">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="469" y="98" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1608482041152" />
+    <state x="469" y="98" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1608581935382" />
     <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608508057006">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

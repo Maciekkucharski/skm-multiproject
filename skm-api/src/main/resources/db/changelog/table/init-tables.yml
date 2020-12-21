@@ -3,14 +3,10 @@ databaseChangeLog:
       id: 2020_12_20-initial-tables
       author: maciej.kucharski
       preConditions:
-        - onFail: MARK_RUN
+        - onFail: MARK_RAN
           not:
             tableExists:
-              tableName: skms
-        - onFail: MARK_RUN
-          not:
-            tableExists:
-              tableName: compartments
+              tableName: skms, compartments,
       changes:
         - createTable:
             tableName: skms
@@ -29,6 +25,11 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
+                  name: station
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
                   name: toGdynia
                   type: Boolean
                   constraints:
@@ -36,8 +37,6 @@ databaseChangeLog:
               - column:
                   name: capability
                   type: INT
-                  constraints:
-                    nullable: false
         - createTable:
             tableName: compartments
             columns:
@@ -50,7 +49,7 @@ databaseChangeLog:
                     primaryKey: true
                     primaryKeyName: compartment_id_pkey
               - column:
-                  name: limit
+                  name: limitation
                   type: INT
                   constraints:
                     nullable: false
