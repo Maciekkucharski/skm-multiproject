@@ -1,7 +1,0 @@
-databaseChangelog:
-  - include:
-      file: db/changelog/table/init-tables.yml
-  - include:
-      file: db/changelog/data/init-data-insert-skm.yml
-  - include:
-      file: db/changelog/data/init-data-insert-compartment.yml

@@ -13,8 +13,12 @@ public class Compartment implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private int limit;
-    @OneToMany(mappedBy = "compartment", cascade = CascadeType.ALL, orphanRemoval = true)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "skm_id")
+    private Skm skm;
+    @Transient
     public List<Human> humans;
 
 

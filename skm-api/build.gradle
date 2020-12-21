@@ -11,20 +11,37 @@ sourceCompatibility = '15'
 repositories {
 	mavenCentral()
 }
-
+//
+//dependencies {
+//	implementation 'org.springframework.boot:spring-boot-starter-web'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//	implementation 'junit:junit:4.12'
+//	implementation 'mysql:mysql-connector-java:8.0.22'
+//	implementation 'org.liquibase:liquibase-core:4.2.1'
+//	testImplementation 'com.h2database:h2'
+//	testImplementation(
+//			'org.springframework.boot:spring-boot-starter-test',
+//			'junit:junit:4.12')
+////			{
+////		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+////	}
+//}
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'junit:junit:4.12'
+
 	implementation 'mysql:mysql-connector-java:8.0.22'
 	implementation 'org.liquibase:liquibase-core:4.2.1'
+
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+
 	testImplementation 'com.h2database:h2'
-	testImplementation(
-			'org.springframework.boot:spring-boot-starter-test',
-			'junit:junit:4.12')
-//			{
-//		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-//	}
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
 }
 
 test {

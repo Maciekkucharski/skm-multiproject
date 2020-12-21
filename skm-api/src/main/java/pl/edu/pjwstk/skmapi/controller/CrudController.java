@@ -1,17 +1,10 @@
 package pl.edu.pjwstk.skmapi.controller;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import pl.edu.pjwstk.skmapi.services.CrudService;
 import pl.edu.pjwstk.skmapi.services.DbEntity;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 
 public abstract class CrudController<T extends DbEntity> {

@@ -4,6 +4,9 @@ services:
     build: ./skm-api
     ports:
     - "11111:11111"
+    restart: on-failure:5
+    depends_on:
+      - skmdb
   skmclient:
     build: ./skm-client
     ports:
@@ -11,7 +14,7 @@ services:
   skmdb:
     build: ./db
     ports:
-      - "3333:3333"
+      - "3306:3306"
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: pwd

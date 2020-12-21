@@ -1,0 +1,63 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2020_12_20-initial-tables
+      author: maciej.kucharski
+      preConditions:
+        - onFail: MARK_RUN
+          not:
+            tableExists:
+              tableName: skms
+        - onFail: MARK_RUN
+          not:
+            tableExists:
+              tableName: compartments
+      changes:
+        - createTable:
+            tableName: skms
+            column:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: skm_id_pkey
+              - column:
+                  name: pauseCount
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: toGdynia
+                  type: Boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: capability
+                  type: INT
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: compartments
+            columns:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: compartment_id_pkey
+              - column:
+                  name: limit
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: skm_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: compartment_skm_id_fkey
+                    references: skms(id)

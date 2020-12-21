@@ -13,13 +13,18 @@ public class Skm implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     public int pauseCount = 0;
+    @Column
     public Boolean toGdynia;
+
     @OneToMany(mappedBy = "skm", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Compartment> compartments;
 
     public Stations station;
+    @Column
     public int capability;
+
     private Random random = new Random();
 
     public Boolean getToGdynia() {
@@ -29,8 +34,6 @@ public class Skm implements DbEntity {
     public void setToGdynia(Boolean toGdynia) {
         this.toGdynia = toGdynia;
     }
-
-
 
     public List<Compartment> getCompartments() {
         return compartments;
@@ -154,7 +157,7 @@ public class Skm implements DbEntity {
 
     @Override
     public Long getId() {
-        return null;
+        return id;
     }
 
     public Skm() {
