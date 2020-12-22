@@ -55,7 +55,7 @@ public class SkmCatalogueController extends CrudController<Skm> {
         return skm -> {
             var payload = new LinkedHashMap<String, Object>();
             payload.put("id", skm.getId());
-            payload.put("capability", skm.getCapability());
+            payload.put("capability", skm.getCapacity());
             payload.put("station", skm.getStation());
             payload.put("compartments", skm.getCompartments().stream().map(Compartment::getId));
             payload.put("direction", skm.getToGdynia());

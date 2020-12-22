@@ -1,12 +1,5 @@
 version: '3'
 services:
-  skmapi:
-    build: ./skm-api
-    ports:
-    - "11111:11111"
-    restart: on-failure:5
-    depends_on:
-      - skmdb
   skmclient:
     build: ./skm-client
     ports:
@@ -21,3 +14,10 @@ services:
       MYSQL_DATABASE: skmcontrol
       MYSQL_USER: skmcontroler
       MYSQL_PASSWORD: pwd
+  skmapi:
+    build: ./skm-api
+    ports:
+      - "11111:11111"
+    restart: on-failure:5
+    depends_on:
+      - skmdb

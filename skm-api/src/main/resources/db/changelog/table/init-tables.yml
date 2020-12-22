@@ -34,9 +34,6 @@ databaseChangeLog:
                   type: Boolean
                   constraints:
                     nullable: false
-              - column:
-                  name: capability
-                  type: INT
         - createTable:
             tableName: compartments
             columns:

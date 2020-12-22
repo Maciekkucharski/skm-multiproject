@@ -17,7 +17,7 @@ public class Compartment implements DbEntity {
 
 
     @Column(name = "limitation")
-    private int limit;
+    private Integer limit;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "skm_id")
     private Skm skm;
@@ -57,9 +57,11 @@ public class Compartment implements DbEntity {
         return;
     }
 
-    public int getLimit() {
+    public Integer getLimit() {
         return limit;
     }
+
+
 
     public void setLimit(int limit) {
         this.limit = limit;
@@ -77,6 +79,6 @@ public class Compartment implements DbEntity {
 
     @Override
     public Long getId() {
-        return null;
+        return id;
     }
 }

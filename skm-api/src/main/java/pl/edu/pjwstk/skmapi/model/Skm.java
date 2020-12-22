@@ -14,7 +14,7 @@ public class Skm implements DbEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    public int pauseCount;
+    public Integer pauseCount;
     @Column
     public Boolean toGdynia;
 
@@ -23,8 +23,7 @@ public class Skm implements DbEntity {
 
     @Column(name = "station")
     public Stations station;
-    @Column
-    public int capability;
+
     @Transient
     private Random random = new Random();
 
@@ -52,12 +51,12 @@ public class Skm implements DbEntity {
         this.station = station;
     }
 
-    public int getCapability() {
-        return capability;
-    }
-
-    public void setCapability(int capability) {
-        this.capability = capability;
+    public int getCapacity(){
+        int sum=0;
+        for (Compartment compartment:compartments) {
+            sum+=compartment.getLimit();
+        }
+        return sum;
     }
 
     public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station, int capability) {
@@ -65,7 +64,6 @@ public class Skm implements DbEntity {
         this.id = ID;
         this.compartments = compartments;
         this.station = station;
-        this.capability = capability;
     }
 
     public int countPeople() {
@@ -79,7 +77,7 @@ public class Skm implements DbEntity {
     }
 
     public double getPercentageOfUsage() {
-        return (100.0 * countPeople() / capability);
+        return (100.0 * countPeople() / getCapacity());
     }
 
 
@@ -103,7 +101,7 @@ public class Skm implements DbEntity {
         this.id = id;
     }
 
-    public int getPauseCount() {
+    public Integer getPauseCount() {
         return pauseCount;
     }
 

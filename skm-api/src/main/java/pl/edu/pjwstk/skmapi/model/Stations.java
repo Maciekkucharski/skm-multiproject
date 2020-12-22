@@ -53,4 +53,8 @@ public enum Stations {
             return number[endpointIndex];
         }
     }
+
+    public static Stations randomStation(){
+        return number[rand.nextInt(15)];
+    }
 }

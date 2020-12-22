@@ -1,12 +1,9 @@
 package pl.edu.pjwstk.skmapi.services;
 
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -35,15 +32,12 @@ public abstract class CrudService<T extends DbEntity> {
     }
 
     public T getById(Long id) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(id).orElseThrow(() -> new idNotFoundException("not a valid id"));
     }
 
     public void delete(Long id) {
         Optional<T> item = repository.findById(id);
-
-        if (item.isPresent()) {
-            repository.delete(item.orElseThrow());
-        }
+        repository.delete(item.orElseThrow(() -> new idNotFoundException("not a valid id")));
     }
 
     public abstract T createOrUpdate(T updateEntity) throws EmptyFieldException;
