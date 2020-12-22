@@ -13,6 +13,9 @@ public class Compartment implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
+
     @Column(name = "limitation")
     private int limit;
     @ManyToOne(fetch = FetchType.LAZY)
@@ -21,6 +24,13 @@ public class Compartment implements DbEntity {
     @Transient
     public List<Human> humans;
 
+    public Skm getSkm() {
+        return skm;
+    }
+
+    public void setSkm(Skm skm) {
+        this.skm = skm;
+    }
 
     public List<Human> getHumans() {
         return humans;
@@ -45,6 +55,14 @@ public class Compartment implements DbEntity {
             humans.remove(human);
         }
         return;
+    }
+
+    public int getLimit() {
+        return limit;
+    }
+
+    public void setLimit(int limit) {
+        this.limit = limit;
     }
 
 
