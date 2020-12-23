@@ -70,7 +70,7 @@ public class Skm implements DbEntity {
     }
 
 
-    public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station, int capability) {
+    public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station) {
         this.toGdynia = toGdynia;
         this.id = ID;
         this.compartments = compartments;
@@ -88,7 +88,6 @@ public class Skm implements DbEntity {
         return sum;
     }
 
-
     public int countPeople() {
         int sum = 0;
         for (Compartment compartment : compartments) {
@@ -100,7 +99,6 @@ public class Skm implements DbEntity {
     public double getPercentageOfUsage() {
         return (100.0 * countPeople() / getCapacity());
     }
-
 
     public boolean isWaiting(SkmRepository skmRepository, Skm skm) {
         if (this.pauseCount == 2) {
@@ -142,6 +140,7 @@ public class Skm implements DbEntity {
             }
         }
     }
+
     public Compartment getFirstFreeCompartment(){
         for (Compartment compartment:this.getCompartments()) {
             if (compartment.humans.size()<compartment.getLimit()){

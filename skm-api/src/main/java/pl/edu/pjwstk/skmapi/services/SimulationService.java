@@ -16,13 +16,11 @@ import java.util.Random;
 @Service
 public class SimulationService {
     private final SkmRepository skmRepository;
-    private final CompartmentRepository compartmentRepository;
     private final HumanRepository humanRepository;
 
 
     public SimulationService(SkmRepository skmRepository, CompartmentRepository compartmentRepository, HumanRepository humanRepository) {
         this.skmRepository = skmRepository;
-        this.compartmentRepository = compartmentRepository;
         this.humanRepository = humanRepository;
     }
 

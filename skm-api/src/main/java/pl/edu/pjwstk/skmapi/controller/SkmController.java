@@ -1,7 +1,6 @@
 package pl.edu.pjwstk.skmapi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.skmapi.model.Compartment;
@@ -26,10 +25,6 @@ public class SkmController extends CrudController<Skm> {
         this.compartmentRepository = compartmentRepository;
         this.skmRepository = skmRepository;
     }
-
-
-
-
     @Override
     public Function<Skm, Map<String, Object>> transformToDTO() {
         return skm -> {

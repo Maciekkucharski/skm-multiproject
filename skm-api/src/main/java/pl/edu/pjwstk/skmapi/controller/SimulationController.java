@@ -7,9 +7,7 @@ import pl.edu.pjwstk.skmapi.services.SimulationService;
 @RestController
 @RequestMapping("/move")
 public class SimulationController {
-
     private final SimulationService simulationService;
-
     public SimulationController(SimulationService simulationService) {
         this.simulationService = simulationService;
     }

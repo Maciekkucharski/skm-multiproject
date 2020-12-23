@@ -16,19 +16,7 @@ public abstract class CrudService<T extends DbEntity> {
     }
 
     public List<T> getAll() {
-//        int page, int size, String[] sort
-//        Pageable pageable;
-//        if (sort[0].equals("asc")) {
-//            pageable = PageRequest.of(page, size, Sort.by(sort[1]).ascending());
-//        } else {
-//            pageable = PageRequest.of(page, size, Sort.by(sort[1]).descending());
-//        }
-//        Iterable<T> items = repository.findAll(pageable);
-//        var itemList = new ArrayList<T>();
-//
-//        items.forEach(itemList::add);
-//
-//        return itemList;
+
         System.out.println("jestem tutaj");
         return repository.findAll();
     }

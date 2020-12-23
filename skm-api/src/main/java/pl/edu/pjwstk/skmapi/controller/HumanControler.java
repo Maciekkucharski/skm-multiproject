@@ -14,9 +14,6 @@ public class HumanControler extends CrudController<Human>{
     protected HumanControler(CrudService<Human> service) {
         super(service);
     }
-
-
-
     @Override
     public Function<Human, Map<String, Object>> transformToDTO() {
             return passenger -> {

@@ -54,7 +54,5 @@ public enum Stations {
         }
     }
 
-    public static Stations randomStation(){
-        return number[rand.nextInt(15)];
-    }
+
 }

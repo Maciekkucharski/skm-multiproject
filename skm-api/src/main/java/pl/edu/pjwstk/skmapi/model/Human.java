@@ -28,10 +28,14 @@ public class Human implements DbEntity {
         this.endpoint = endpoint;
         this.compartment = compartment;
     }
+
     public Human(Stations endpoint) {
         this.name = "name";
         this.surname = "surname";
         this.endpoint = endpoint;
+    }
+
+    public Human() {
     }
 
     public String getName() {
@@ -58,7 +62,6 @@ public class Human implements DbEntity {
         this.endpoint = endpoint;
     }
 
-
     public Compartment getCompartment() {
         return compartment;
     }
@@ -78,11 +81,6 @@ public class Human implements DbEntity {
     @Override
     public int hashCode() {
         return Objects.hash(endpoint);
-    }
-
-
-
-    public Human() {
     }
 
     @Override

@@ -9,12 +9,9 @@ import java.util.List;
 @Entity
 @Table(name = "compartments")
 public class Compartment implements DbEntity {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
 
     @Column(name = "limitation")
     private Integer limit;
@@ -44,11 +41,9 @@ public class Compartment implements DbEntity {
         return limit;
     }
 
-
     public void setLimit(int limit) {
         this.limit = limit;
     }
-
 
     public Compartment() {
     }
@@ -58,22 +53,14 @@ public class Compartment implements DbEntity {
         this.limit = limit;
     }
 
-
     public void removePassenger(Human human) {
         while(humans.remove(human));
     }
-
 
     public Human addPassenger(Stations station) {
         Human human = new Human(station, this);
         this.humans.add(human);
         return human;
-//        if (this.humans.add(human)) {
-//
-//            return human;
-//        } else {
-//            return false;
-//        }
     }
 
     public void removePassengers() {
@@ -85,16 +72,8 @@ public class Compartment implements DbEntity {
         return this.getHumans().size();
     }
 
-
     @Override
     public Long getId() {
         return id;
-    }
-
-    @Override
-    public String toString() {
-        return "Compartment{" +
-                "humans=" + humans +
-                '}';
     }
 }
