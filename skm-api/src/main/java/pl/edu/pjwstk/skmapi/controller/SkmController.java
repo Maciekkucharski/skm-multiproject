@@ -39,6 +39,9 @@ public class SkmController extends CrudController<Skm> {
             payload.put("compartments", skm.getCompartments().stream().map(Compartment::getId));
             payload.put("direction", skm.getToGdynia());
             payload.put("pauseCount", skm.getPauseCount());
+            payload.put("Capacity", skm.getCapacity());
+            payload.put("Load", skm.countPeople());
+            payload.put("Load percentage", skm.getPercentageOfUsage());
 
             return payload;
         };

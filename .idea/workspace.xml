@@ -11,10 +11,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SimulationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SimulationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SkmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SkmService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-compartment.sql" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-compartment.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-skm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-skm.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CompartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CompartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +316,7 @@
       <workItem from="1608492461055" duration="15693000" />
       <workItem from="1608581763349" duration="11375000" />
       <workItem from="1608622761570" duration="33347000" />
-      <workItem from="1608721505220" duration="22281000" />
+      <workItem from="1608721505220" duration="23562000" />
     </task>
     <servers />
   </component>

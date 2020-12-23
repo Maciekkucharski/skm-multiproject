@@ -61,11 +61,13 @@ databaseChangeLog:
             tableName: humans
             column:
               - column:
-                  name: compartment_id
+                  name: id
                   type: INT
+                  autoIncrement: true
                   constraints:
-                    foreignKeyName: human_compartment_id_fkey
-                    references: compartments(id)
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: human_id_pkey
               - column:
                   name: endpoint
                   type: INT
@@ -82,10 +84,8 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: id
+                  name: compartment_id
                   type: INT
-                  autoIncrement: true
                   constraints:
-                    nullable: false
-                    primaryKey: true
-                    primaryKeyName: human_id_pkey
+                    foreignKeyName: human_compartment_id_fkey
+                    references: compartments(id)

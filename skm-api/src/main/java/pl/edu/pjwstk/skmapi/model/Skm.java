@@ -14,9 +14,6 @@ public class Skm implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-
-
     @Column(name = "pause_count")
     private Integer pauseCount;
     @Column(name = "to_gdynia")

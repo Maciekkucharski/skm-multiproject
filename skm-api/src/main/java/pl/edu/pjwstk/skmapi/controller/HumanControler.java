@@ -2,7 +2,6 @@ package pl.edu.pjwstk.skmapi.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.model.Human;
 import pl.edu.pjwstk.skmapi.services.CrudService;
 

@@ -3,6 +3,7 @@ package pl.edu.pjwstk.skmapi.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.skmapi.model.Compartment;
+import pl.edu.pjwstk.skmapi.model.Human;
 import pl.edu.pjwstk.skmapi.services.CompartmentService;
 
 import java.util.LinkedHashMap;
@@ -24,6 +25,7 @@ public class CompartmentController extends CrudController<Compartment> {
             payload.put("id", compartment.getId());
             payload.put("limitation", compartment.getLimit());
             payload.put("skm_id", compartment.getSkm().getId());
+            payload.put("Humans", compartment.getHumans().stream().map(Human::getId));
 
             return payload;
         };

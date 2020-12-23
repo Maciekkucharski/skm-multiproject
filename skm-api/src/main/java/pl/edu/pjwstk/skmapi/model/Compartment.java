@@ -22,7 +22,7 @@ public class Compartment implements DbEntity {
     @JoinColumn(name = "skm_id")
     private Skm skm;
     @OneToMany(mappedBy = "compartment", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Human> humans ;
+    public List<Human> humans;
 
     public Skm getSkm() {
         return skm;
