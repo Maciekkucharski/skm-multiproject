@@ -22,7 +22,7 @@ public class Compartment implements DbEntity {
     @JoinColumn(name = "skm_id")
     private Skm skm;
     @OneToMany(mappedBy = "compartment", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Human> humans = new ArrayList<>();
+    public List<Human> humans ;
 
     public Skm getSkm() {
         return skm;
@@ -64,12 +64,16 @@ public class Compartment implements DbEntity {
     }
 
 
-    public boolean addPassenger(Stations station) {
-        if (this.humans.add(new Human(station))) {
-            return true;
-        } else {
-            return false;
-        }
+    public Human addPassenger(Stations station) {
+        Human human = new Human(station, this);
+        this.humans.add(human);
+        return human;
+//        if (this.humans.add(human)) {
+//
+//            return human;
+//        } else {
+//            return false;
+//        }
     }
 
     public void removePassengers() {

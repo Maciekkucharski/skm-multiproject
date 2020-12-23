@@ -1,11 +1,13 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import pl.edu.pjwstk.skmapi.services.DbEntity;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "humans")
-public class Human {
+public class Human implements DbEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +22,12 @@ public class Human {
     @JoinColumn(name = "compartment_id")
     private Compartment compartment;
 
+    public Human(Stations endpoint,Compartment compartment) {
+        this.name = "name";
+        this.surname = "surname";
+        this.endpoint = endpoint;
+        this.compartment = compartment;
+    }
     public Human(Stations endpoint) {
         this.name = "name";
         this.surname = "surname";
@@ -50,6 +58,15 @@ public class Human {
         this.endpoint = endpoint;
     }
 
+
+    public Compartment getCompartment() {
+        return compartment;
+    }
+
+    public void setCompartment(Compartment compartment) {
+        this.compartment = compartment;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -63,15 +80,13 @@ public class Human {
         return Objects.hash(endpoint);
     }
 
-    @Override
-    public String toString() {
-        return "Human{" +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", endpoint=" + endpoint +
-                '}';
-    }
+
 
     public Human() {
+    }
+
+    @Override
+    public Long getId() {
+        return id;
     }
 }

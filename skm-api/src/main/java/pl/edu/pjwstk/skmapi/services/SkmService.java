@@ -14,10 +14,10 @@ import static pl.edu.pjwstk.skmapi.util.Utils.fallbackIfNull;
 
 @Service
 public class SkmService extends CrudService<Skm> {
-    private final CompartmentRepository compartmentRepository;
+//    private final CompartmentRepository compartmentRepository;
     public SkmService(SkmRepository skmRepository, CompartmentRepository compartmentRepository) {
         super(skmRepository);
-        this.compartmentRepository = compartmentRepository;
+//        this.compartmentRepository = compartmentRepository;
     }
 
 
