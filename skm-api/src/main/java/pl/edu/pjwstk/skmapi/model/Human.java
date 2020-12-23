@@ -1,25 +1,41 @@
 package pl.edu.pjwstk.skmapi.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Objects;
-@Entity
-public class Human {
+import pl.edu.pjwstk.skmapi.services.DbEntity;
 
+import javax.persistence.*;
+import java.util.Objects;
+
+@Entity
+@Table(name = "humans")
+public class Human implements DbEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "first_name")
     String name;
+    @Column(name = "surname")
     String surname;
+    @Column(name = "endpoint")
     Stations endpoint;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "compartment_id")
+    private Compartment compartment;
+
+    public Human(Stations endpoint,Compartment compartment) {
+        this.name = "name";
+        this.surname = "surname";
+        this.endpoint = endpoint;
+        this.compartment = compartment;
+    }
 
     public Human(Stations endpoint) {
         this.name = "name";
         this.surname = "surname";
         this.endpoint = endpoint;
+    }
+
+    public Human() {
     }
 
     public String getName() {
@@ -46,6 +62,14 @@ public class Human {
         this.endpoint = endpoint;
     }
 
+    public Compartment getCompartment() {
+        return compartment;
+    }
+
+    public void setCompartment(Compartment compartment) {
+        this.compartment = compartment;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -59,6 +83,8 @@ public class Human {
         return Objects.hash(endpoint);
     }
 
-    public Human() {
+    @Override
+    public Long getId() {
+        return id;
     }
 }

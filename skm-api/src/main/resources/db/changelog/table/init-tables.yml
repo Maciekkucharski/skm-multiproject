@@ -1,0 +1,91 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2020_12_20-initial-tables
+      author: maciej.kucharski
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: skms, compartments, humans,
+      changes:
+        - createTable:
+            tableName: skms
+            column:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: skm_id_pkey
+              - column:
+                  name: pause_count
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: station
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: to_gdynia
+                  type: Boolean
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: compartments
+            columns:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: compartment_id_pkey
+              - column:
+                  name: limitation
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: skm_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: compartment_skm_id_fkey
+                    references: skms(id)
+        - createTable:
+            tableName: humans
+            column:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: human_id_pkey
+              - column:
+                  name: endpoint
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: compartment_id
+                  type: INT
+                  constraints:
+                    foreignKeyName: human_compartment_id_fkey
+                    references: compartments(id)

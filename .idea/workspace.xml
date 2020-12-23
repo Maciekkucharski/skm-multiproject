@@ -1,49 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fdb0848-2d0e-4d03-8a62-da4706213f7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/repository/CompartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/repository/SkmRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/CompartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/CrudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/DbEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/SkmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/data/init-data-compartment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/data/init-data-insert-skm.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/db.changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db.changelog/table/init-tables.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="df82215d-6ae0-4f95-a8ea-e30a0e24b4fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmCatalogueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmCatalogueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Compartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/Skm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Skm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Stations.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-client/src/main/java/pl/edu/pjwstk/skmclient/model/Stations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +34,28 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/skm-api">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="skm-multiproject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="skm-multiproject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="skm-multiproject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -114,21 +92,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\data" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\table" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data\sql" />
       <recent name="H:\java zaawansowana\skm-multiproject" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-client\src\main\java\pl\edu\pjwstk\skmclient\model" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-client" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.edu.pjwstk.skmapi.util" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.edu.pjwstk.skmapi.services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,7 +125,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.skm-multiproject [dependencies]">
+  <component name="RunManager" selected="Gradle.SkmApiApplicationTests">
+    <configuration name="SkmApiApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.SkmApiApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":skm-api:cleanTest" />
+            <option value=":skm-api:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SkmApiApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,6 +204,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="skm-multiproject:skm-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/skm-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SkmApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="skm-multiproject.skm-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.pjwstk.skmapi.SkmApiApplication" />
@@ -213,9 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.skm-multiproject [dependencies]" />
+        <item itemvalue="Gradle.SkmApiApplicationTests" />
         <item itemvalue="Gradle.skm-multiproject [build]" />
         <item itemvalue="Gradle.SkmApiApplicationTests.contextLoads" />
+        <item itemvalue="Gradle.skm-multiproject:skm-api [build]" />
+        <item itemvalue="Gradle.skm-multiproject [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +252,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -254,7 +287,17 @@
       <workItem from="1604407183211" duration="28000" />
       <workItem from="1607531670931" duration="1884000" />
       <workItem from="1607611833348" duration="13325000" />
-      <workItem from="1607693458752" duration="2947000" />
+      <workItem from="1607693458752" duration="3446000" />
+      <workItem from="1608116596899" duration="19000" />
+      <workItem from="1608120634320" duration="2217000" />
+      <workItem from="1608275170817" duration="17000" />
+      <workItem from="1608472269063" duration="171000" />
+      <workItem from="1608472497618" duration="8626000" />
+      <workItem from="1608489722306" duration="2729000" />
+      <workItem from="1608492461055" duration="15693000" />
+      <workItem from="1608581763349" duration="11375000" />
+      <workItem from="1608622761570" duration="33347000" />
+      <workItem from="1608721505220" duration="24462000" />
     </task>
     <servers />
   </component>
@@ -274,61 +317,97 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#Plugins/0.0.1858.1080@0.0.1858.1080" timestamp="1603910214406" />
-    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser" timestamp="1607623386465">
+    <state x="521" y="198" key="#SQL_Dialects" timestamp="1608734733706">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1607623386465" />
+    <state x="521" y="198" key="#SQL_Dialects/0.0.1858.1080@0.0.1858.1080" timestamp="1608734733706" />
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608734737739">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1608734737739" />
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser" timestamp="1608742155285">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="979" y="339" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1608742155285" />
+    <state x="659" y="316" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1608592544026">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="659" y="316" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1608592544026" />
     <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1607623537700">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="659" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1607623537700" />
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1607694000417">
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1608651670101">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1607694000417" />
-    <state width="1815" height="143" key="GridCell.Tab.0.bottom" timestamp="1607696713481">
+    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1608651670101" />
+    <state width="1815" height="220" key="GridCell.Tab.0.bottom" timestamp="1608736324526">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="143" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1607696713481" />
-    <state width="1815" height="143" key="GridCell.Tab.0.center" timestamp="1607696713481">
+    <state width="1815" height="220" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1608736324526" />
+    <state width="1815" height="220" key="GridCell.Tab.0.center" timestamp="1608736324526">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="143" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1607696713481" />
-    <state width="1815" height="143" key="GridCell.Tab.0.left" timestamp="1607696713481">
+    <state width="1815" height="220" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1608736324526" />
+    <state width="1815" height="220" key="GridCell.Tab.0.left" timestamp="1608736324526">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="143" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1607696713481" />
-    <state width="1815" height="143" key="GridCell.Tab.0.right" timestamp="1607696713481">
+    <state width="1815" height="220" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1608736324526" />
+    <state width="1815" height="220" key="GridCell.Tab.0.right" timestamp="1608736324526">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="143" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1607696713481" />
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1603896793510">
+    <state width="1815" height="220" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1608736324526" />
+    <state width="1249" height="174" key="GridCell.Tab.1.bottom" timestamp="1608666641324">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
-    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1603896793510">
+    <state width="1249" height="174" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.1.center" timestamp="1608666641324">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
-    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1603896793510">
+    <state width="1249" height="174" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.1.left" timestamp="1608666641324">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
-    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1603896793510">
+    <state width="1249" height="174" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.1.right" timestamp="1608666641324">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603896793510" />
-    <state x="469" y="98" key="SettingsEditor" timestamp="1607622405086">
+    <state width="1249" height="174" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.2.bottom" timestamp="1608666641324">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="469" y="98" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1607622405086" />
+    <state width="1249" height="174" key="GridCell.Tab.2.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.2.center" timestamp="1608666641324">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1249" height="174" key="GridCell.Tab.2.center/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.2.left" timestamp="1608666641324">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1249" height="174" key="GridCell.Tab.2.left/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state width="1249" height="174" key="GridCell.Tab.2.right" timestamp="1608666641324">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1249" height="174" key="GridCell.Tab.2.right/0.0.1858.1080@0.0.1858.1080" timestamp="1608666641324" />
+    <state x="469" y="98" key="SettingsEditor" timestamp="1608652227125">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="469" y="98" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1608652227125" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1608624497581">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1858.1080@0.0.1858.1080" timestamp="1608624497581" />
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608508057006">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080@0.0.1858.1080" timestamp="1608508057006" />
     <state x="671" y="168" key="refactoring.ChangeSignatureDialog" timestamp="1603824358548">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="671" y="168" key="refactoring.ChangeSignatureDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603824358548" />
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1607622329099">
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1608652199062">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1607622329099" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1608652199062" />
   </component>
 </project>
