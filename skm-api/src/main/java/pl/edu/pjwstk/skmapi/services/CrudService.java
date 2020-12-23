@@ -3,6 +3,7 @@ package pl.edu.pjwstk.skmapi.services;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
+import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,6 +29,7 @@ public abstract class CrudService<T extends DbEntity> {
 //        items.forEach(itemList::add);
 //
 //        return itemList;
+        System.out.println("jestem tutaj");
         return repository.findAll();
     }
 

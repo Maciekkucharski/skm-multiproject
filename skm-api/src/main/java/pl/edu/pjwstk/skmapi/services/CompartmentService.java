@@ -2,6 +2,7 @@ package pl.edu.pjwstk.skmapi.services;
 
 
 import org.springframework.stereotype.Service;
+import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
 import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 

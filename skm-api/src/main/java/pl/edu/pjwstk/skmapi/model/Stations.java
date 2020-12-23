@@ -43,7 +43,7 @@ public enum Stations {
         }
     }
 
-    public Stations randomNextStation(Skm skm) {
+    public static Stations randomNextStation(Skm skm) {
         int tempStation = skm.getStation().ordinal();
         if (!skm.getToGdynia()) {
             int endpointIndex = rand.nextInt(15 - tempStation) + tempStation;

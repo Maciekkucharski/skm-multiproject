@@ -5,6 +5,7 @@ import pl.edu.pjwstk.skmapi.services.DbEntity;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
 @Entity
 @Table(name = "compartments")
 public class Compartment implements DbEntity {
@@ -15,14 +16,13 @@ public class Compartment implements DbEntity {
     private Long id;
 
 
-
     @Column(name = "limitation")
     private Integer limit;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "skm_id")
     private Skm skm;
-    @Transient
-    public List<Human> humans;
+    @OneToMany(mappedBy = "compartment", cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<Human> humans = new ArrayList<>();
 
     public Skm getSkm() {
         return skm;
@@ -40,27 +40,9 @@ public class Compartment implements DbEntity {
         this.humans = humans;
     }
 
-    public boolean addHuman(Human human) {
-        if (humans.size() < limit) {
-            humans.add(human);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public void removeHuman(Human human) {
-        int temp = this.humans.size();
-        for (int i = 0; i < temp; i++) {
-            humans.remove(human);
-        }
-        return;
-    }
-
     public Integer getLimit() {
         return limit;
     }
-
 
 
     public void setLimit(int limit) {
@@ -77,8 +59,38 @@ public class Compartment implements DbEntity {
     }
 
 
+    public void removePassenger(Human human) {
+        while(humans.remove(human));
+    }
+
+
+    public boolean addPassenger(Stations station) {
+        if (this.humans.add(new Human(station))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void removePassengers() {
+        if (!humans.isEmpty())
+        humans.forEach(h->removePassenger(new Human(skm.getStation())));
+    }
+
+    public int numberOfPassengers(){
+        return this.getHumans().size();
+    }
+
+
     @Override
     public Long getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Compartment{" +
+                "humans=" + humans +
+                '}';
     }
 }

@@ -6,7 +6,7 @@ databaseChangeLog:
         - onFail: MARK_RAN
           not:
             tableExists:
-              tableName: skms, compartments,
+              tableName: skms, compartments, humans,
       changes:
         - createTable:
             tableName: skms
@@ -20,7 +20,7 @@ databaseChangeLog:
                     primaryKey: true
                     primaryKeyName: skm_id_pkey
               - column:
-                  name: pauseCount
+                  name: pause_count
                   type: INT
                   constraints:
                     nullable: false
@@ -30,7 +30,7 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: toGdynia
+                  name: to_gdynia
                   type: Boolean
                   constraints:
                     nullable: false
@@ -57,3 +57,35 @@ databaseChangeLog:
                     nullable: false
                     foreignKeyName: compartment_skm_id_fkey
                     references: skms(id)
+        - createTable:
+            tableName: humans
+            column:
+              - column:
+                  name: compartment_id
+                  type: INT
+                  constraints:
+                    foreignKeyName: human_compartment_id_fkey
+                    references: compartments(id)
+              - column:
+                  name: endpoint
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: human_id_pkey

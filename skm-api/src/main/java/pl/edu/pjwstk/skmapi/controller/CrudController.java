@@ -23,12 +23,17 @@ public abstract class CrudController<T extends DbEntity> {
 
     @GetMapping
     public ResponseEntity<List<Map<String, Object>>> getAll() {
+
         List<T> list = service.getAll();
+
         List<Map<String, Object>> payload = null;
+
         try {
+
             payload = list.stream()
                     .map(obj -> transformToDTO().apply(obj))
                     .collect(Collectors.toList());
+
             return new ResponseEntity<>(payload, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -64,7 +69,7 @@ public abstract class CrudController<T extends DbEntity> {
             return new ResponseEntity<>(HttpStatus.ACCEPTED);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }                   
+        }
     }
 
     @DeleteMapping("/{id}")

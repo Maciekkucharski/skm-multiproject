@@ -1,5 +1,6 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import pl.edu.pjwstk.skmapi.repository.SkmRepository;
 import pl.edu.pjwstk.skmapi.services.DbEntity;
 
 import javax.persistence.*;
@@ -13,16 +14,19 @@ public class Skm implements DbEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
-    public Integer pauseCount;
-    @Column
-    public Boolean toGdynia;
+
+
+
+    @Column(name = "pause_count")
+    private Integer pauseCount;
+    @Column(name = "to_gdynia")
+    private Boolean toGdynia;
 
     @OneToMany(mappedBy = "skm", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Compartment> compartments;
+    private List<Compartment> compartments;
 
     @Column(name = "station")
-    public Stations station;
+    private Stations station;
 
     @Transient
     private Random random = new Random();
@@ -51,50 +55,8 @@ public class Skm implements DbEntity {
         this.station = station;
     }
 
-    public int getCapacity(){
-        int sum=0;
-        for (Compartment compartment:compartments) {
-            sum+=compartment.getLimit();
-        }
-        return sum;
-    }
-
-    public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station, int capability) {
-        this.toGdynia = toGdynia;
-        this.id = ID;
-        this.compartments = compartments;
-        this.station = station;
-    }
-
-    public int countPeople() {
-        int iterator = 0;
-        for (Compartment compartment : compartments) {
-            for (Human human : compartment.getHumans()) {
-                iterator++;
-            }
-        }
-        return iterator;
-    }
-
-    public double getPercentageOfUsage() {
-        return (100.0 * countPeople() / getCapacity());
-    }
-
-
-    public boolean isWaiting() {
-        if (this.pauseCount == 2) {
-            this.pauseCount--;
-            return true;
-        } else if (this.pauseCount == 1) {
-            this.pauseCount--;
-            if (this.toGdynia == false) {
-                this.setToGdynia(true);
-            } else {
-                this.setToGdynia(false);
-            }
-            return true;
-        } else
-            return false;
+    public void setPauseCount(Integer pauseCount) {
+        this.pauseCount = pauseCount;
     }
 
     public void setId(Long id) {
@@ -105,52 +67,91 @@ public class Skm implements DbEntity {
         return pauseCount;
     }
 
-    public void setPauseCount(int pauseCount) {
-        this.pauseCount = pauseCount;
-    }
-
-
-    public void moveSkm() {
-        if (isWaiting()) {
-            return;
-        } else {
-            this.station = this.station.move(this.toGdynia);
-
-            if (this.station.isFirst() || this.station.isLast()) {
-                this.pauseCount += 2;
-            }
-            int randAmount = random.nextInt(8 - 2) + 2;
-            for (int i = 0; i < randAmount; i++) {
-                this.addPassengers();
-            }
-            this.removePassengers();
-        }
-        return;
-    }
-
-    public void addPassengers() {
-        for (Compartment compartment : compartments) {
-            if (compartment.addHuman(new Human(this.station.randomNextStation(this)))) {
-                break;
-            }
-
-        }
-    }
-
-    public void removePassengers() {
-        for (int i = 0; i < compartments.size(); i++) {
-
-            compartments.get(i).removeHuman(new Human(this.station));
-        }
-    }
-
-
-
     @Override
     public Long getId() {
         return id;
     }
 
+
+    public Skm(Boolean toGdynia, Long ID, List<Compartment> compartments, Stations station, int capability) {
+        this.toGdynia = toGdynia;
+        this.id = ID;
+        this.compartments = compartments;
+        this.station = station;
+    }
+
     public Skm() {
     }
+
+    public int getCapacity(){
+        int sum=0;
+        for (Compartment compartment:compartments) {
+            sum+=compartment.getLimit();
+        }
+        return sum;
+    }
+
+
+    public int countPeople() {
+        int sum = 0;
+        for (Compartment compartment : compartments) {
+            sum+=compartment.numberOfPassengers();
+        }
+        return sum;
+    }
+
+    public double getPercentageOfUsage() {
+        return (100.0 * countPeople() / getCapacity());
+    }
+
+
+    public boolean isWaiting(SkmRepository skmRepository, Skm skm) {
+        if (this.pauseCount == 2) {
+            this.pauseCount--;
+            skm.setPauseCount(this.pauseCount);
+            skmRepository.save(skm);
+            return true;
+        } else if (this.pauseCount == 1) {
+            this.pauseCount--;
+            skm.setPauseCount(this.pauseCount);
+            skmRepository.save(skm);
+            if (this.toGdynia == false) {
+                this.setToGdynia(true);
+                skm.setToGdynia(this.toGdynia);
+                skmRepository.save(skm);
+            } else {
+                this.setToGdynia(false);
+                skm.setToGdynia(this.toGdynia);
+                skmRepository.save(skm);
+            }
+            return true;
+        } else
+            return false;
+    }
+
+    public void moveSkm(SkmRepository skmRepository, Long skmId) {
+        Skm currentSkm = skmRepository.findById(skmId).orElse(null);
+        if (isWaiting(skmRepository,currentSkm)) {
+            return;
+        } else {
+            this.station = this.station.move(this.toGdynia);
+            currentSkm.setStation(station);
+            skmRepository.save(currentSkm);
+            if (this.station.isFirst() || this.station.isLast()) {
+                this.pauseCount += 2;
+                currentSkm.setPauseCount(pauseCount);
+                skmRepository.save(currentSkm);
+                return;
+            }
+        }
+    }
+    public Compartment getFirstFreeCompartment(){
+        for (Compartment compartment:this.getCompartments()) {
+            if (compartment.humans.size()<compartment.getLimit()){
+                return compartment;
+            }
+        }
+        return null;
+    }
+
 }

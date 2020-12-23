@@ -1,13 +1,24 @@
 package pl.edu.pjwstk.skmapi.model;
 
+import javax.persistence.*;
 import java.util.Objects;
+
+@Entity
+@Table(name = "humans")
 public class Human {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "first_name")
     String name;
+    @Column(name = "surname")
     String surname;
+    @Column(name = "endpoint")
     Stations endpoint;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "compartment_id")
+    private Compartment compartment;
 
     public Human(Stations endpoint) {
         this.name = "name";
@@ -50,6 +61,15 @@ public class Human {
     @Override
     public int hashCode() {
         return Objects.hash(endpoint);
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", endpoint=" + endpoint +
+                '}';
     }
 
     public Human() {

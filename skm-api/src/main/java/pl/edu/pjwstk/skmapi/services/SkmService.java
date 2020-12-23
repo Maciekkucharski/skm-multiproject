@@ -2,10 +2,8 @@ package pl.edu.pjwstk.skmapi.services;
 
 
 import org.springframework.stereotype.Service;
-import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
-import pl.edu.pjwstk.skmapi.model.Compartment;
+import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
 import pl.edu.pjwstk.skmapi.model.Skm;
-import pl.edu.pjwstk.skmapi.model.Stations;
 import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 import pl.edu.pjwstk.skmapi.repository.SkmRepository;
 
@@ -42,9 +40,7 @@ public class SkmService extends CrudService<Skm> {
 
             return repository.save(dbEntity);
         } else {
-            updateEntity = repository.save(updateEntity);
-
-            return updateEntity;
+            throw new idNotFoundException("nie znaleziono skm'ki");
         }
     }
 }
