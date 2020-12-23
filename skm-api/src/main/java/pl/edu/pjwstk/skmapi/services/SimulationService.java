@@ -47,7 +47,9 @@ public class SimulationService {
             removePassengers(skm);
             for (int i = 2; i < random.nextInt(7) + 2; i++) {
                 if (skm.getCapacity() > skm.countPeople()) {
-                    humanRepository.save(skm.getFirstFreeCompartment().addPassenger(Stations.randomNextStation(skm)));
+                    if (skm.getPauseCount()==0){
+                        humanRepository.save(skm.getFirstFreeCompartment().addPassenger(Stations.randomNextStation(skm)));
+                    }
                 }
             }
         }
