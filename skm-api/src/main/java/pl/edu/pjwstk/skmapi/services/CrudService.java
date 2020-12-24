@@ -16,8 +16,6 @@ public abstract class CrudService<T extends DbEntity> {
     }
 
     public List<T> getAll() {
-
-        System.out.println("jestem tutaj");
         return repository.findAll();
     }
 

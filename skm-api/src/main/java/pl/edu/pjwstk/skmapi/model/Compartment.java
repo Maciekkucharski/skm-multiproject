@@ -29,6 +29,14 @@ public class Compartment implements DbEntity {
         this.skm = skm;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setLimit(Integer limit) {
+        this.limit = limit;
+    }
+
     public List<Human> getHumans() {
         return humans;
     }
@@ -41,9 +49,6 @@ public class Compartment implements DbEntity {
         return limit;
     }
 
-    public void setLimit(int limit) {
-        this.limit = limit;
-    }
 
     public Compartment() {
     }
