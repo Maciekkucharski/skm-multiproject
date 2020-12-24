@@ -1,6 +1,5 @@
 package pl.edu.pjwstk.skmapi.serviceTests;
 
-import liquibase.pro.packaged.C;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,22 +19,22 @@ import java.util.Optional;
 @RunWith(SpringRunner.class)
 public class CompartmentServiceTest {
     @MockBean
-    CompartmentRepository compartmentRepository;
+    CompartmentRepository repository;
 
-    CompartmentService compartmentService;
+    CompartmentService service;
 
     @Before
     public void setup() {
-        compartmentService = new CompartmentService(compartmentRepository);
+        service = new CompartmentService(repository);
     }
 
 
     @Test
     public void CreateOrUpdateWithoutIdAdded() {
         Compartment compartment = new Compartment();
-        Mockito.when(compartmentRepository.save(compartment)).thenReturn(compartment);
-        Assert.assertEquals(compartment,compartmentService.createOrUpdate(compartment));
-        Mockito.verify(compartmentRepository).save(compartment);
+        Mockito.when(repository.save(compartment)).thenReturn(compartment);
+        Assert.assertEquals(compartment, service.createOrUpdate(compartment));
+        Mockito.verify(repository).save(compartment);
     }
 
 
@@ -43,9 +42,9 @@ public class CompartmentServiceTest {
     public void CreateOrUpdateWithIdThrowsException() {
         Compartment compartment =  new Compartment();
         compartment.setId(1L);
-        Mockito.when(compartmentRepository.findById(1L)).thenReturn(Optional.empty());
+        Mockito.when(repository.findById(1L)).thenReturn(Optional.empty());
         Assert.assertThrows(idNotFoundException.class, () -> {
-            compartmentService.createOrUpdate(compartment);
+            service.createOrUpdate(compartment);
         });
     }
 
@@ -53,52 +52,52 @@ public class CompartmentServiceTest {
     public void CreateOrUpdateWithIdAddedCorrectly() {
         Compartment compartment =  new Compartment();
         compartment.setId(1L);
-        Mockito.when(compartmentRepository.findById(1L)).thenReturn(Optional.of(compartment));
-        Mockito.when(compartmentRepository.save(compartment)).thenReturn(compartment);
-        Assert.assertEquals(compartment,compartmentService.createOrUpdate(compartment));
+        Mockito.when(repository.findById(1L)).thenReturn(Optional.of(compartment));
+        Mockito.when(repository.save(compartment)).thenReturn(compartment);
+        Assert.assertEquals(compartment, service.createOrUpdate(compartment));
     }
 
     @Test
     public void getAllTest() {
-        compartmentService.getAll();
-        Mockito.verify(compartmentRepository).findAll();
+        service.getAll();
+        Mockito.verify(repository).findAll();
     }
 
     @Test
     public void getByIdCorrectlyTest() {
         Compartment compartment = new Compartment();
         compartment.setId(1L);
-        Mockito.when(compartmentRepository.findById(1l)).thenReturn(Optional.of(compartment));
-        Assert.assertEquals(Optional.of(compartment),compartmentRepository.findById(1l));
-        Mockito.verify(compartmentRepository).findById(1L);
+        Mockito.when(repository.findById(1l)).thenReturn(Optional.of(compartment));
+        Assert.assertEquals(Optional.of(compartment), repository.findById(1l));
+        Mockito.verify(repository).findById(1L);
     }
 
     @Test
     public void getByIdIncorrectlyTest() {
-        Mockito.when(compartmentRepository.findById(1l)).thenReturn(Optional.empty());
+        Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
         Assert.assertThrows(idNotFoundException.class, () -> {
-            compartmentService.getById(1l);
+            service.getById(1l);
         });
-        Mockito.verify(compartmentRepository).findById(1L);
+        Mockito.verify(repository).findById(1L);
     }
 
     @Test
     public void deleteCorrectlyTest() {
         Compartment compartment = new Compartment();
         compartment.setId(1L);
-        Mockito.when(compartmentRepository.findById(1l)).thenReturn(Optional.of(compartment));
-        compartmentService.delete(1l);
-        Mockito.verify(compartmentRepository).findById(1L);
-        Mockito.verify(compartmentRepository).delete(compartment);
+        Mockito.when(repository.findById(1l)).thenReturn(Optional.of(compartment));
+        service.delete(1l);
+        Mockito.verify(repository).findById(1L);
+        Mockito.verify(repository).delete(compartment);
     }
 
     @Test
     public void deleteInCorrectlyTest() {
-        Mockito.when(compartmentRepository.findById(1l)).thenReturn(Optional.empty());
+        Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
         Assert.assertThrows(idNotFoundException.class, () -> {
-            compartmentService.delete(1l);
+            service.delete(1l);
         });
-        Mockito.verify(compartmentRepository).findById(1L);
+        Mockito.verify(repository).findById(1L);
     }
 
 
