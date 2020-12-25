@@ -16,14 +16,11 @@ import java.util.function.Function;
 @RestController
 @RequestMapping("/skm")
 public class SkmController extends CrudController<Skm> {
-    private final CompartmentRepository compartmentRepository;
-    private final SkmRepository skmRepository;
+
 
     @Autowired
-    public SkmController(CrudService<Skm> service, CompartmentRepository compartmentRepository, SkmRepository skmRepository) {
+    public SkmController(CrudService<Skm> service) {
         super(service);
-        this.compartmentRepository = compartmentRepository;
-        this.skmRepository = skmRepository;
     }
     @Override
     public Function<Skm, Map<String, Object>> transformToDTO() {

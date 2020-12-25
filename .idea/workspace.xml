@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82215d-6ae0-4f95-a8ea-e30a0e24b4fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/SkmControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +132,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CompartmentControllerTest">
+  <component name="RunManager" selected="Gradle.SkmControllerTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -141,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompartmentControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SkmControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.SkmControllerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -162,12 +165,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompartmentControllerTest.addBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SkmControllerTest.addBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.addBadRequest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.SkmControllerTest.addBadRequest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -183,12 +186,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompartmentControllerTest.addBadRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SkmControllerTest.addTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.addBadRequestTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.SkmControllerTest.addTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -204,12 +207,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompartmentControllerTest.deleteBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SkmControllerTest.deleteBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.deleteBadRequest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.SkmControllerTest.deleteBadRequest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -225,12 +228,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompartmentControllerTest.deleteIsAccepted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SkmControllerTest.deleteIsAccepted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.deleteIsAccepted&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.SkmControllerTest.deleteIsAccepted&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -262,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CompartmentControllerTest" />
-        <item itemvalue="Gradle.CompartmentControllerTest.addBadRequest" />
-        <item itemvalue="Gradle.CompartmentControllerTest.deleteBadRequest" />
-        <item itemvalue="Gradle.CompartmentControllerTest.deleteIsAccepted" />
-        <item itemvalue="Gradle.CompartmentControllerTest.addBadRequestTest" />
+        <item itemvalue="Gradle.SkmControllerTest" />
+        <item itemvalue="Gradle.SkmControllerTest.deleteIsAccepted" />
+        <item itemvalue="Gradle.SkmControllerTest.deleteBadRequest" />
+        <item itemvalue="Gradle.SkmControllerTest.addBadRequest" />
+        <item itemvalue="Gradle.SkmControllerTest.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +331,7 @@
       <workItem from="1608811833749" duration="20316000" />
       <workItem from="1608897797088" duration="2546000" />
       <workItem from="1608900386503" duration="309000" />
-      <workItem from="1608922974759" duration="2953000" />
+      <workItem from="1608922974759" duration="3967000" />
     </task>
     <servers />
   </component>
@@ -354,6 +357,7 @@
     <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest_getAllTest.ic" NAME="HumanControllerTest.getAllTest Coverage Results" MODIFIED="1608906492603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest.ic" NAME="CompartmentControllerTest Coverage Results" MODIFIED="1608925845943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest_moveTest.ic" NAME="SimulationControllerTest.moveTest Coverage Results" MODIFIED="1608917901539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SkmControllerTest.ic" NAME="SkmControllerTest Coverage Results" MODIFIED="1608926873908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest.ic" NAME="HumanControllerTest Coverage Results" MODIFIED="1608909274154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_removePassengersTest.ic" NAME="SimulationServiceTests.removePassengersTest Coverage Results" MODIFIED="1608901501887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_updateAccepted.ic" NAME="CompartmentControllerTest.updateAccepted Coverage Results" MODIFIED="1608914640123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
