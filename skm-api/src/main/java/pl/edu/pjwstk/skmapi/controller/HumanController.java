@@ -9,9 +9,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 @RestController
-@RequestMapping("passengers")
-public class HumanControler extends CrudController<Human>{
-    protected HumanControler(CrudService<Human> service) {
+@RequestMapping("/passengers")
+public class HumanController extends CrudController<Human>{
+    protected HumanController(CrudService<Human> service) {
         super(service);
     }
     @Override

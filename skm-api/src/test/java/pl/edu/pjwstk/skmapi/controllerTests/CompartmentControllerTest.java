@@ -32,8 +32,7 @@ public class CompartmentControllerTest {
     CompartmentController controller;
     @MockBean
     CompartmentService service;
-    @MockBean
-    CompartmentRepository repository;
+
     @Test
     public void getAllTest() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/compartment").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk());
