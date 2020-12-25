@@ -19,7 +19,7 @@ public class SimulationService {
     private final HumanRepository humanRepository;
 
 
-    public SimulationService(SkmRepository skmRepository, CompartmentRepository compartmentRepository, HumanRepository humanRepository) {
+    public SimulationService(SkmRepository skmRepository, HumanRepository humanRepository) {
         this.skmRepository = skmRepository;
         this.humanRepository = humanRepository;
     }

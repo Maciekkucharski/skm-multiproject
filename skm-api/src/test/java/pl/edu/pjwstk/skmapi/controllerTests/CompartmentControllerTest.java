@@ -1,4 +1,4 @@
 package pl.edu.pjwstk.skmapi.controllerTests;
 
-public class CompartmentController {
+public class CompartmentControllerTest {
 }
