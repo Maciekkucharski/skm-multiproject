@@ -22,7 +22,7 @@ public class Human implements DbEntity {
     @JoinColumn(name = "compartment_id")
     private Compartment compartment;
 
-    public Human(Stations endpoint,Compartment compartment) {
+    public Human(Stations endpoint, Compartment compartment) {
         this.name = "name";
         this.surname = "surname";
         this.endpoint = endpoint;

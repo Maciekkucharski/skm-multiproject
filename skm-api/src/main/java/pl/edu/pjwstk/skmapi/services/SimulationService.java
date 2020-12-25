@@ -5,7 +5,6 @@ import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.model.Human;
 import pl.edu.pjwstk.skmapi.model.Skm;
 import pl.edu.pjwstk.skmapi.model.Stations;
-import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 import pl.edu.pjwstk.skmapi.repository.HumanRepository;
 import pl.edu.pjwstk.skmapi.repository.SkmRepository;
 
@@ -45,7 +44,7 @@ public class SimulationService {
             removePassengers(skm);
             for (int i = 2; i < random.nextInt(7) + 2; i++) {
                 if (skm.getCapacity() > skm.countPeople()) {
-                    if (skm.getPauseCount()==0){
+                    if (skm.getPauseCount() == 0) {
                         humanRepository.save(skm.getFirstFreeCompartment().addPassenger(Stations.randomNextStation(skm)));
                     }
                 }

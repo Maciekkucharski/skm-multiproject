@@ -9,6 +9,7 @@ import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 import java.util.Optional;
 
 import static pl.edu.pjwstk.skmapi.util.Utils.fallbackIfNull;
+
 @Service
 public class CompartmentService extends CrudService<Compartment> {
     public CompartmentService(CompartmentRepository repository) {

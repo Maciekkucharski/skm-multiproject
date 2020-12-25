@@ -4,7 +4,6 @@ package pl.edu.pjwstk.skmapi.services;
 import org.springframework.stereotype.Service;
 import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
 import pl.edu.pjwstk.skmapi.model.Skm;
-import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
 import pl.edu.pjwstk.skmapi.repository.SkmRepository;
 
 import java.util.Optional;
@@ -31,9 +30,9 @@ public class SkmService extends CrudService<Skm> {
             var dbEntity = skmInDb.get();
 
             dbEntity.setToGdynia(fallbackIfNull(updateEntity.getToGdynia(), dbEntity.getToGdynia()));
-            dbEntity.setPauseCount(fallbackIfNull(updateEntity.getPauseCount(),dbEntity.getPauseCount()));
-            dbEntity.setStation(fallbackIfNull(updateEntity.getStation(),dbEntity.getStation()));
-            dbEntity.setCompartments(fallbackIfNull(updateEntity.getCompartments(),dbEntity.getCompartments()));
+            dbEntity.setPauseCount(fallbackIfNull(updateEntity.getPauseCount(), dbEntity.getPauseCount()));
+            dbEntity.setStation(fallbackIfNull(updateEntity.getStation(), dbEntity.getStation()));
+            dbEntity.setCompartments(fallbackIfNull(updateEntity.getCompartments(), dbEntity.getCompartments()));
 
 
             return repository.save(dbEntity);

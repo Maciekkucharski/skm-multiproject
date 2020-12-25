@@ -80,10 +80,10 @@ public class Skm implements DbEntity {
     public Skm() {
     }
 
-    public int getCapacity(){
-        int sum=0;
-        for (Compartment compartment:compartments) {
-            sum+=compartment.getLimit();
+    public int getCapacity() {
+        int sum = 0;
+        for (Compartment compartment : compartments) {
+            sum += compartment.getLimit();
         }
         return sum;
     }
@@ -91,7 +91,7 @@ public class Skm implements DbEntity {
     public int countPeople() {
         int sum = 0;
         for (Compartment compartment : compartments) {
-            sum+=compartment.numberOfPassengers();
+            sum += compartment.numberOfPassengers();
         }
         return sum;
     }
@@ -126,7 +126,7 @@ public class Skm implements DbEntity {
 
     public void moveSkm(SkmRepository skmRepository, Long skmId) {
         Skm currentSkm = skmRepository.findById(skmId).orElse(null);
-        if (isWaiting(skmRepository,currentSkm)) {
+        if (isWaiting(skmRepository, currentSkm)) {
             return;
         } else {
             this.station = this.station.move(this.toGdynia);
@@ -141,9 +141,9 @@ public class Skm implements DbEntity {
         }
     }
 
-    public Compartment getFirstFreeCompartment(){
-        for (Compartment compartment:this.getCompartments()) {
-            if (compartment.humans.size()<compartment.getLimit()){
+    public Compartment getFirstFreeCompartment() {
+        for (Compartment compartment : this.getCompartments()) {
+            if (compartment.humans.size() < compartment.getLimit()) {
                 return compartment;
             }
         }

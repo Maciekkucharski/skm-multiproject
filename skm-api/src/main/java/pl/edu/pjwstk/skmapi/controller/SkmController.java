@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.model.Skm;
-import pl.edu.pjwstk.skmapi.repository.CompartmentRepository;
-import pl.edu.pjwstk.skmapi.repository.SkmRepository;
 import pl.edu.pjwstk.skmapi.services.CrudService;
 
 import java.util.LinkedHashMap;
@@ -22,6 +20,7 @@ public class SkmController extends CrudController<Skm> {
     public SkmController(CrudService<Skm> service) {
         super(service);
     }
+
     @Override
     public Function<Skm, Map<String, Object>> transformToDTO() {
         return skm -> {

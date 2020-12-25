@@ -59,7 +59,7 @@ public class Compartment implements DbEntity {
     }
 
     public void removePassenger(Human human) {
-        while(humans.remove(human));
+        while (humans.remove(human)) ;
     }
 
     public Human addPassenger(Stations station) {
@@ -70,10 +70,10 @@ public class Compartment implements DbEntity {
 
     public void removePassengers() {
         if (!humans.isEmpty())
-        humans.forEach(h->removePassenger(new Human(skm.getStation())));
+            humans.forEach(h -> removePassenger(new Human(skm.getStation())));
     }
 
-    public int numberOfPassengers(){
+    public int numberOfPassengers() {
         return this.getHumans().size();
     }
 
