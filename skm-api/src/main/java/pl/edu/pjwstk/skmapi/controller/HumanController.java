@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.skmapi.model.Human;
 import pl.edu.pjwstk.skmapi.services.CrudService;
+import pl.edu.pjwstk.skmapi.services.HumanService;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -12,7 +13,7 @@ import java.util.function.Function;
 @RestController
 @RequestMapping("/passengers")
 public class HumanController extends CrudController<Human> {
-    protected HumanController(CrudService<Human> service) {
+    protected HumanController(HumanService service) {
         super(service);
     }
 

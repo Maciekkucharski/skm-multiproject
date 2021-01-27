@@ -1,0 +1,1 @@
+INSERT INTO users (login, password, authority) VALUES ('bob','{bcrypt}$2a$10$UTGiWG7bJpCP.XRXwPtx9ORW0jM0H2LPEEynN9vmezaJT5.XEhDTu','ROLE_ADMIN');

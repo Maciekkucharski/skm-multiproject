@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82215d-6ae0-4f95-a8ea-e30a0e24b4fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/util/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/init-data-users.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-user.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,10 +25,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/HumanControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/HumanControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/HumanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/SkmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +87,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -91,6 +105,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -100,7 +118,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/skm-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -108,23 +126,26 @@
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\data" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\table" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.edu.pjwstk.skmapi.security" />
+      <recent name="pl.edu.pjwstk.skmapi.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\java_zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data\sql" />
+      <recent name="H:\java_zaawansowana\skm-multiproject\skm-api\src\main\java\pl\edu\pjwstk\skmapi" />
+      <recent name="H:\java_zaawansowana\skm-multiproject\skm-api\src\main\java\pl\edu\pjwstk\skmapi\security" />
       <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data\sql" />
       <recent name="H:\java zaawansowana\skm-multiproject" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-client\src\main\java\pl\edu\pjwstk\skmclient\model" />
-      <recent name="H:\java zaawansowana\skm-multiproject\skm-client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.edu.pjwstk.skmapi.util" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pl.edu.pjwstk.skmapi.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\java_zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog\data" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db\changelog" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\data" />
+      <recent name="H:\java zaawansowana\skm-multiproject\skm-api\src\main\resources\db.changelog\table" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -134,18 +155,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HumanControllerTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'skm-multiproject.skm-api.test'">
     <configuration name="HumanControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,9 +172,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="HumanControllerTest.deleteBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -183,9 +191,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="HumanControllerTest.getAllTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -204,30 +210,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="HumanControllerTest.getByBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.HumanControllerTest.getByBadRequest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":skm-api:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="HumanControllerTest.getByIdAccepted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -246,9 +229,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'skm-multiproject.skm-api.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":skm-api:cleanTest" />
+            <option value=":skm-api:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="SkmApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -267,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'skm-multiproject.skm-api.test'" />
         <item itemvalue="Gradle.HumanControllerTest" />
         <item itemvalue="Gradle.HumanControllerTest.deleteBadRequest" />
         <item itemvalue="Gradle.HumanControllerTest.getByIdAccepted" />
         <item itemvalue="Gradle.HumanControllerTest.getAllTest" />
-        <item itemvalue="Gradle.HumanControllerTest.getByBadRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -334,36 +335,76 @@
       <workItem from="1608897797088" duration="2546000" />
       <workItem from="1608900386503" duration="309000" />
       <workItem from="1608922974759" duration="6629000" />
+      <workItem from="1611145787285" duration="492000" />
+      <workItem from="1611146338176" duration="1134000" />
+      <workItem from="1611750476829" duration="1251000" />
+      <workItem from="1611752495388" duration="1347000" />
+      <workItem from="1611754028664" duration="287000" />
+      <workItem from="1611754378347" duration="6377000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/desktop-tutorial" />
     </ignored-roots>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1611756087430">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1611756087430" />
+    <state x="1076" y="306" key="FileChooserDialogImpl" timestamp="1611754313462">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1076" y="306" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1611754313462" />
+    <state width="1815" height="505" key="GridCell.Tab.0.bottom" timestamp="1611146279134">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="505" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
+    <state width="1815" height="505" key="GridCell.Tab.0.center" timestamp="1611146279134">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="505" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
+    <state width="1815" height="505" key="GridCell.Tab.0.left" timestamp="1611146279133">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="505" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279133" />
+    <state width="1815" height="505" key="GridCell.Tab.0.right" timestamp="1611146279134">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="505" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
+    <state x="633" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611752678419">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="633" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1858.1080@0.0.1858.1080" timestamp="1611752678419" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611761553153">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611761553153" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_addBadRequest.ic" NAME="CompartmentControllerTest.addBadRequest Coverage Results" MODIFIED="1608916762457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$Tests_in__skm_multiproject_skm_api_test_.ic" NAME="Tests in 'skm-multiproject.skm-api.test' Coverage Results" MODIFIED="1608928232510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$HumanServiceTest.ic" NAME="HumanServiceTest Coverage Results" MODIFIED="1608922234214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$SkmServiceTest.ic" NAME="SkmServiceTest Coverage Results" MODIFIED="1608819995284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest_getAllTest.ic" NAME="HumanControllerTest.getAllTest Coverage Results" MODIFIED="1608906492603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest.ic" NAME="CompartmentControllerTest Coverage Results" MODIFIED="1608925845943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest_moveTest.ic" NAME="SimulationControllerTest.moveTest Coverage Results" MODIFIED="1608917901539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$SkmControllerTest.ic" NAME="SkmControllerTest Coverage Results" MODIFIED="1608926873908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest.ic" NAME="HumanControllerTest Coverage Results" MODIFIED="1608929541499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_removePassengersTest.ic" NAME="SimulationServiceTests.removePassengersTest Coverage Results" MODIFIED="1608901501887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_updateAccepted.ic" NAME="CompartmentControllerTest.updateAccepted Coverage Results" MODIFIED="1608914640123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_deleteBadRequest.ic" NAME="CompartmentControllerTest.deleteBadRequest Coverage Results" MODIFIED="1608916409259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_updateBadRequest.ic" NAME="CompartmentControllerTest.updateBadRequest Coverage Results" MODIFIED="1608916648509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_moveTest.ic" NAME="SimulationServiceTests.moveTest Coverage Results" MODIFIED="1608922150962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_addAccepted.ic" NAME="CompartmentControllerTest.addAccepted Coverage Results" MODIFIED="1608914833640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest.ic" NAME="SimulationControllerTest Coverage Results" MODIFIED="1608928089604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentServiceTest_CreateOrUpdateWithNoIdParameter.ic" NAME="CompartmentServiceTest.CreateOrUpdateWithNoIdParameter Coverage Results" MODIFIED="1608768612372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentServiceTest.ic" NAME="CompartmentServiceTest Coverage Results" MODIFIED="1608922200186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$HumanServiceTest.ic" NAME="HumanServiceTest Coverage Results" MODIFIED="1608922234214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$Tests_in__skm_multiproject_skm_api_test_.ic" NAME="Tests in 'skm-multiproject.skm-api.test' Coverage Results" MODIFIED="1608928232510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests.ic" NAME="SimulationServiceTests Coverage Results" MODIFIED="1608922265699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_updateBadRequest.ic" NAME="CompartmentControllerTest.updateBadRequest Coverage Results" MODIFIED="1608916648509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest_getAllTest.ic" NAME="HumanControllerTest.getAllTest Coverage Results" MODIFIED="1608906492603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SkmControllerTest.ic" NAME="SkmControllerTest Coverage Results" MODIFIED="1608926873908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest.ic" NAME="SimulationControllerTest Coverage Results" MODIFIED="1608928089604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentServiceTest.ic" NAME="CompartmentServiceTest Coverage Results" MODIFIED="1608922200186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_deleteBadRequest.ic" NAME="CompartmentControllerTest.deleteBadRequest Coverage Results" MODIFIED="1608916409259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_addBadRequest.ic" NAME="CompartmentControllerTest.addBadRequest Coverage Results" MODIFIED="1608916762457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest.ic" NAME="CompartmentControllerTest Coverage Results" MODIFIED="1608925845943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_updateAccepted.ic" NAME="CompartmentControllerTest.updateAccepted Coverage Results" MODIFIED="1608914640123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_moveTest.ic" NAME="SimulationServiceTests.moveTest Coverage Results" MODIFIED="1608922150962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SkmServiceTest.ic" NAME="SkmServiceTest Coverage Results" MODIFIED="1608819995284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest.ic" NAME="HumanControllerTest Coverage Results" MODIFIED="1608929541499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentServiceTest_CreateOrUpdateWithNoIdParameter.ic" NAME="CompartmentServiceTest.CreateOrUpdateWithNoIdParameter Coverage Results" MODIFIED="1608768612372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_removePassengersTest.ic" NAME="SimulationServiceTests.removePassengersTest Coverage Results" MODIFIED="1608901501887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_addAccepted.ic" NAME="CompartmentControllerTest.addAccepted Coverage Results" MODIFIED="1608914833640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

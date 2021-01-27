@@ -5,3 +5,6 @@ databaseChangeLog:
       file: db/changelog/data/init-data-insert-skm.yml
   - include:
       file: db/changelog/data/init-data-insert-compartment.yml
+  - include:
+      file: db/changelog/data/init-data-users.yml
+

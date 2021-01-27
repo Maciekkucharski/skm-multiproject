@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.skmapi.model.Compartment;
 import pl.edu.pjwstk.skmapi.model.Skm;
 import pl.edu.pjwstk.skmapi.services.CrudService;
+import pl.edu.pjwstk.skmapi.services.SkmService;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -17,7 +18,7 @@ public class SkmController extends CrudController<Skm> {
 
 
     @Autowired
-    public SkmController(CrudService<Skm> service) {
+    public SkmController(SkmService service) {
         super(service);
     }
 
