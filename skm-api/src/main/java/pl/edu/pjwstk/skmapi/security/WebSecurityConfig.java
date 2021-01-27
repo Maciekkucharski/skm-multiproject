@@ -14,12 +14,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/login").permitAll()
-                .antMatchers("/**").hasAuthority("ROLE_ADMIN")
+                .antMatchers(HttpMethod.POST, "/login", "/register", "/move").permitAll()
+                .antMatchers("/user/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/**").hasAnyRole("USER", "PRIVILEGED", "ADMIN")
+                .antMatchers("/**").hasAnyRole("PRIVILEGED", "ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                    .addFilter(new TokenAuthenticationFilter(authenticationManager()))
-                    .addFilter(new TokenAuthorizationFilter(authenticationManager()))
+                .addFilter(new TokenAuthenticationFilter(authenticationManager()))
+                .addFilter(new TokenAuthorizationFilter(authenticationManager()))
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and().csrf().disable();
     }

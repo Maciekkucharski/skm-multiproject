@@ -9,6 +9,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import pl.edu.pjwstk.skmapi.model.User;
 
 import javax.servlet.FilterChain;
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +27,6 @@ public class TokenAuthenticationFilter extends UsernamePasswordAuthenticationFil
 
     public TokenAuthenticationFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
-
         setFilterProcessesUrl("/login");
     }
 
@@ -37,6 +37,7 @@ public class TokenAuthenticationFilter extends UsernamePasswordAuthenticationFil
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(user.getUsername(),
                     user.getPassword(),
                     Collections.emptyList());
+            System.out.println(user.getPassword());
             return authenticationManager.authenticate(authentication);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -48,7 +49,7 @@ public class TokenAuthenticationFilter extends UsernamePasswordAuthenticationFil
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication auth) throws IOException {
-        String subject = auth.getPrincipal().toString();
+        String subject = auth.getName();
 
         var authorities = auth.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList());
 

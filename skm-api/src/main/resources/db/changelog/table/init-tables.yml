@@ -100,7 +100,7 @@ databaseChangeLog:
                   primaryKey: true
                   primaryKeyName: pk_user
             - column:
-                name: login
+                name: username
                 type: varchar(50)
                 constraints:
                   nullable: false

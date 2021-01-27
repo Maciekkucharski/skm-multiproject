@@ -6,6 +6,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
+import pl.edu.pjwstk.skmapi.services.UserService;
 
 @Component
 public class UsernamePasswordAuthenticationProvider implements AuthenticationProvider {
@@ -17,7 +18,6 @@ public class UsernamePasswordAuthenticationProvider implements AuthenticationPro
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         var username = authentication.getPrincipal().toString();
         var password = authentication.getCredentials().toString();
-
         var userDetails = userService.loadUserByUsername(username);
         var matches = userService.getPasswordEncoder().matches(password, userDetails.getPassword());
 
