@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82215d-6ae0-4f95-a8ea-e30a0e24b4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,15 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/data/sql/insert-user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/resources/db/changelog/table/init-tables.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +325,9 @@
       <workItem from="1611750476829" duration="1251000" />
       <workItem from="1611752495388" duration="1347000" />
       <workItem from="1611754028664" duration="287000" />
-      <workItem from="1611754378347" duration="13979000" />
+      <workItem from="1611754378347" duration="16316000" />
+      <workItem from="1611830112001" duration="2965000" />
+      <workItem from="1611833796763" duration="7717000" />
     </task>
     <servers />
   </component>
@@ -344,14 +340,14 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1611774347536">
+    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1611832957998">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1611774347536" />
-    <state x="1076" y="306" key="FileChooserDialogImpl" timestamp="1611773604224">
+    <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1611832957998" />
+    <state x="1076" y="306" key="FileChooserDialogImpl" timestamp="1611838093141">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="1076" y="306" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1611773604224" />
+    <state x="1076" y="306" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1611838093141" />
     <state width="1815" height="505" key="GridCell.Tab.0.bottom" timestamp="1611146279134">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -372,10 +368,14 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="633" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1858.1080@0.0.1858.1080" timestamp="1611752678419" />
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611775005210">
+    <state x="585" y="250" key="run.anything.popup" timestamp="1611833745968">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611775005210" />
+    <state x="585" y="250" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611833745968" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611839618803">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611839618803" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest_moveTest.ic" NAME="SimulationControllerTest.moveTest Coverage Results" MODIFIED="1608917901539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

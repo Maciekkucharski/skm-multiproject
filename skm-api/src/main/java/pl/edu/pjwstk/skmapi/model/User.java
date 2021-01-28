@@ -27,11 +27,24 @@ public class User implements UserDetails, DbEntity {
         this.password = password;
         this.authority = authority;
     }
-
+    //trzy metody z dołu nie są moim pomysłem,  tylko je zainicjowałem, ponieważ mi się  spodobał
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Arrays.stream(this.authority.split(",")).map(String::trim).filter(authority -> !authority.equals("")).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
+
+    public void addAuthority(GrantedAuthority authority) {
+        String trimmedAuthority = authority.getAuthority().trim();
+        String currentAuthority = this.authority == null ? "" : (this.authority + ",");
+        this.authority = currentAuthority + trimmedAuthority;
+    }
+
+    public void removeAuthority(GrantedAuthority authority) {
+        String auth = authority.getAuthority().trim();
+        String newAuthority = this.authority.replace(auth, "").replace(",,", "").trim();
+        this.authority = newAuthority;
+    }
+
 
     public Long getId() {
         return id;
