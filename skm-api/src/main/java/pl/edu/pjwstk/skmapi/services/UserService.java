@@ -9,13 +9,16 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
 import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
-import pl.edu.pjwstk.skmapi.repository.UserRepository;
 import pl.edu.pjwstk.skmapi.model.User;
+import pl.edu.pjwstk.skmapi.repository.UserRepository;
+
+import java.util.Optional;
+
+import static pl.edu.pjwstk.skmapi.util.Utils.fallbackIfNull;
 
 @Service
 public class UserService extends CrudService<User> implements UserDetailsService  {
     private final PasswordEncoder passwordEncoder;
-
     public UserService(UserRepository repository) {
         super(repository);
         passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
@@ -40,7 +43,25 @@ public class UserService extends CrudService<User> implements UserDetailsService
 
     @Override
     public User createOrUpdate(User updateEntity) throws EmptyFieldException {
-        return null;
+        updateEntity.setPassword(passwordEncoder.encode(updateEntity.getPassword()));
+        if (updateEntity.getId() == null) {
+            return repository.save(updateEntity);
+        }
+
+        Optional<User> userInDb = repository.findById(updateEntity.getId());
+
+        if (userInDb.isPresent()) {
+            var dbEntity = userInDb.get();
+
+            dbEntity.setPassword(fallbackIfNull(updateEntity.getPassword(), dbEntity.getPassword()));
+            dbEntity.setUsername(fallbackIfNull(updateEntity.getUsername(), dbEntity.getUsername()));
+            dbEntity.setAuthority(fallbackIfNull(updateEntity.getAuthority(), dbEntity.getAuthority()));
+
+
+            return repository.save(dbEntity);
+        } else {
+            throw new idNotFoundException("nie znaleziono skm'ki");
+        }
     }
 
     public void removeAuthority(GrantedAuthority authority,Long id) throws UsernameNotFoundException{

@@ -23,7 +23,6 @@ public abstract class CrudController<T extends DbEntity> {
 
     @GetMapping
     public ResponseEntity<List<Map<String, Object>>> getAll() {
-
         List<T> list = service.getAll();
 
         List<Map<String, Object>> payload = null;

@@ -13,8 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" afterDir="false" />
     </list>
@@ -327,7 +329,8 @@
       <workItem from="1611754028664" duration="287000" />
       <workItem from="1611754378347" duration="16316000" />
       <workItem from="1611830112001" duration="2965000" />
-      <workItem from="1611833796763" duration="7717000" />
+      <workItem from="1611833796763" duration="9699000" />
+      <workItem from="1611933611124" duration="3586000" />
     </task>
     <servers />
   </component>
@@ -372,10 +375,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="585" y="250" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611833745968" />
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611839618803">
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611841912318">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611839618803" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1611841912318" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationControllerTest_moveTest.ic" NAME="SimulationControllerTest.moveTest Coverage Results" MODIFIED="1608917901539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

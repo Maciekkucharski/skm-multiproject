@@ -14,10 +14,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/login", "/register", "/move").permitAll()
                 .antMatchers("/user/**").hasRole("ADMIN")
                 .antMatchers(HttpMethod.GET, "/**").hasAnyRole("USER", "PRIVILEGED", "ADMIN")
                 .antMatchers("/**").hasAnyRole("PRIVILEGED", "ADMIN")
+                .antMatchers(HttpMethod.POST, "/login", "/register", "/move").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilter(new TokenAuthenticationFilter(authenticationManager()))

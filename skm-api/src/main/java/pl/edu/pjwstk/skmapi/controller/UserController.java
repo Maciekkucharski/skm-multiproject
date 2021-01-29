@@ -28,6 +28,7 @@ public class UserController extends CrudController<User> {
             payload.put("id", user.getId());
             payload.put("username", user.getUsername());
             payload.put("authorities", user.getAuthorities());
+            payload.put("password",user.getPassword());
             return payload;
         };
     }

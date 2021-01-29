@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
 import pl.edu.pjwstk.skmapi.services.UserService;
-
+//czy ta klasa jest  w  ogóle  potrzebna???
 @Component
 public class UsernamePasswordAuthenticationProvider implements AuthenticationProvider {
 
