@@ -17,8 +17,6 @@ import pl.edu.pjwstk.skmapi.model.User;
 import pl.edu.pjwstk.skmapi.repository.UserRepository;
 import pl.edu.pjwstk.skmapi.services.UserService;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
