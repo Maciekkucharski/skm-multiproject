@@ -9,16 +9,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/CrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/UsernamePasswordAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/security/TokenAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/CompartmentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/HumanControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/HumanControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/SimulationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/SimulationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/SkmControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/SkmControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,81 +146,65 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'skm-multiproject.skm-api.test'">
-    <configuration name="HumanControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CompartmentControllerTest">
+    <configuration name="CompartmentControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.HumanControllerTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
+            <option value=":skm-api:cleanTest" />
             <option value=":skm-api:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HumanControllerTest.deleteBadRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompartmentControllerTest.deleteIsAccepted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.HumanControllerTest.deleteBadRequest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.deleteIsAccepted&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
+            <option value=":skm-api:cleanTest" />
             <option value=":skm-api:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HumanControllerTest.getAllTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompartmentControllerTest.getAllTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.HumanControllerTest.getAllTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.CompartmentControllerTest.getAllTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
+            <option value=":skm-api:cleanTest" />
             <option value=":skm-api:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="HumanControllerTest.getByIdAccepted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.controllerTests.HumanControllerTest.getByIdAccepted&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":skm-api:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Tests in 'skm-multiproject.skm-api.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -239,6 +227,25 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="skm-multiproject [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SkmApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="skm-multiproject.skm-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.pjwstk.skmapi.SkmApiApplication" />
@@ -255,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CompartmentControllerTest" />
+        <item itemvalue="Gradle.CompartmentControllerTest.getAllTest" />
+        <item itemvalue="Gradle.CompartmentControllerTest.deleteIsAccepted" />
+        <item itemvalue="Gradle.skm-multiproject [dependencies]" />
         <item itemvalue="Gradle.Tests in 'skm-multiproject.skm-api.test'" />
-        <item itemvalue="Gradle.HumanControllerTest" />
-        <item itemvalue="Gradle.HumanControllerTest.deleteBadRequest" />
-        <item itemvalue="Gradle.HumanControllerTest.getByIdAccepted" />
-        <item itemvalue="Gradle.HumanControllerTest.getAllTest" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +337,8 @@
       <workItem from="1611754378347" duration="16316000" />
       <workItem from="1611830112001" duration="2965000" />
       <workItem from="1611833796763" duration="9699000" />
-      <workItem from="1611933611124" duration="3586000" />
+      <workItem from="1611933611124" duration="10698000" />
+      <workItem from="1611947017114" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -343,6 +351,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="521" y="198" key="#Project_Structure" timestamp="1611941971644">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="198" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1611941971644" />
     <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1611832957998">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -351,22 +363,22 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1076" y="306" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1611838093141" />
-    <state width="1815" height="505" key="GridCell.Tab.0.bottom" timestamp="1611146279134">
+    <state width="1815" height="563" key="GridCell.Tab.0.bottom" timestamp="1611950663808">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="505" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
-    <state width="1815" height="505" key="GridCell.Tab.0.center" timestamp="1611146279134">
+    <state width="1815" height="563" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1611950663808" />
+    <state width="1815" height="563" key="GridCell.Tab.0.center" timestamp="1611950663808">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="505" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
-    <state width="1815" height="505" key="GridCell.Tab.0.left" timestamp="1611146279133">
+    <state width="1815" height="563" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1611950663808" />
+    <state width="1815" height="563" key="GridCell.Tab.0.left" timestamp="1611950663807">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="505" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279133" />
-    <state width="1815" height="505" key="GridCell.Tab.0.right" timestamp="1611146279134">
+    <state width="1815" height="563" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1611950663807" />
+    <state width="1815" height="563" key="GridCell.Tab.0.right" timestamp="1611950663808">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="505" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1611146279134" />
+    <state width="1815" height="563" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1611950663808" />
     <state x="633" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611752678419">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
