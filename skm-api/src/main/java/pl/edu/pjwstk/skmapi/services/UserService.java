@@ -1,6 +1,5 @@
 package pl.edu.pjwstk.skmapi.services;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -8,7 +7,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
 import pl.edu.pjwstk.skmapi.exception.idNotFoundException;
 import pl.edu.pjwstk.skmapi.model.User;
 import pl.edu.pjwstk.skmapi.repository.UserRepository;
@@ -32,7 +30,7 @@ public class UserService extends CrudService<User> implements UserDetailsService
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username)  {
         return repository.findAll().stream()
                 .filter(u -> u.getUsername().equals(username))
                 .findAny()

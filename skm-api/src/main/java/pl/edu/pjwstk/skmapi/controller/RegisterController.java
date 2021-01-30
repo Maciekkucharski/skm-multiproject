@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.edu.pjwstk.skmapi.exception.EmptyFieldException;
 import pl.edu.pjwstk.skmapi.model.User;
 import pl.edu.pjwstk.skmapi.services.UserService;
 
@@ -18,7 +17,7 @@ public class RegisterController {
     UserService userService;
 
     @PostMapping
-    public ResponseEntity register(@RequestBody User user) throws EmptyFieldException {
+    public ResponseEntity register(@RequestBody User user) {
         try {
             if (userService.loadUserByUsername(user.getUsername()) != null) {
                 return new ResponseEntity(HttpStatus.CONFLICT);

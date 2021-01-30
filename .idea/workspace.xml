@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82215d-6ae0-4f95-a8ea-e30a0e24b4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/controllerTests/RegisterControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,18 +16,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/main/java/pl/edu/pjwstk/skmapi/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/CompartmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/CompartmentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/HumanServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/HumanServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/SimulationServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/SimulationServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/SkmServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/SkmServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/skm-api/src/test/java/pl/edu/pjwstk/skmapi/serviceTests/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +28,9 @@
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="235" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -181,90 +176,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CompartmentServiceTest.deleteInCorrectlyTest">
-    <configuration name="UserServiceTest.CreateOrUpdateWithoutIdAdded" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.skmapi.ServiceTests.UserServiceTest.CreateOrUpdateWithoutIdAdded&quot; --info" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":skm-api:cleanTest" />
-            <option value=":skm-api:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="skm-multiproject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CompartmentServiceTest.deleteInCorrectlyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RegisterControllerTest.registerReturnsIsConflict">
+    <configuration name="RegisterControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="skm-multiproject.skm-api.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.serviceTests.*" />
+          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.controllerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.ServiceTests" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.serviceTests.CompartmentServiceTest" />
-      <option name="METHOD_NAME" value="deleteInCorrectlyTest" />
+      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.controllerTests.RegisterControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterControllerTest.registerReturnsConflict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="skm-multiproject.skm-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.controllerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.controllerTests.RegisterControllerTest" />
+      <option name="METHOD_NAME" value="registerReturnsConflict" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.CreateOrUpdateWithoutIdAdded (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterControllerTest.registerReturnsIsConflict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="skm-multiproject.skm-api.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.serviceTests.*" />
+          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.controllerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.serviceTests.UserServiceTest" />
-      <option name="METHOD_NAME" value="CreateOrUpdateWithoutIdAdded" />
+      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.controllerTests.RegisterControllerTest" />
+      <option name="METHOD_NAME" value="registerReturnsIsConflict" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.CreateOrUpdateWithoutIdAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterControllerTest.registerReturnsIsOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="skm-multiproject.skm-api.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.serviceTests.*" />
+          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.controllerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.ServiceTests" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.ServiceTests.UserServiceTest" />
-      <option name="METHOD_NAME" value="CreateOrUpdateWithoutIdAdded" />
+      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.controllerTests.RegisterControllerTest" />
+      <option name="METHOD_NAME" value="registerReturnsIsOk" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimulationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="skm-multiproject.skm-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjwstk.skmapi.controllerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjwstk.skmapi.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjwstk.skmapi.controllerTests.SimulationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CompartmentServiceTest.deleteInCorrectlyTest" />
-        <item itemvalue="JUnit.UserServiceTest.CreateOrUpdateWithoutIdAdded (1)" />
-        <item itemvalue="Gradle.skm-multiproject [build]" />
-        <item itemvalue="JUnit.UserServiceTest.CreateOrUpdateWithoutIdAdded" />
-        <item itemvalue="Gradle.UserServiceTest.CreateOrUpdateWithoutIdAdded" />
+        <item itemvalue="JUnit.RegisterControllerTest.registerReturnsIsConflict" />
+        <item itemvalue="JUnit.RegisterControllerTest.registerReturnsIsOk" />
+        <item itemvalue="JUnit.RegisterControllerTest.registerReturnsConflict" />
+        <item itemvalue="JUnit.RegisterControllerTest" />
+        <item itemvalue="JUnit.SimulationControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +350,7 @@
       <workItem from="1611947017114" duration="2153000" />
       <workItem from="1612024169523" duration="759000" />
       <workItem from="1612024940752" duration="3874000" />
-      <workItem from="1612028840064" duration="47000" />
+      <workItem from="1612028840064" duration="8060000" />
     </task>
     <servers />
   </component>
@@ -381,6 +367,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1611941971644" />
+    <state x="526" y="194" key="#UserServiceTest" timestamp="1612031508419">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="526" y="194" key="#UserServiceTest/0.0.1858.1080@0.0.1858.1080" timestamp="1612031508419" />
     <state x="734" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1612026212711">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -393,22 +383,22 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1076" y="306" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1611838093141" />
-    <state width="1815" height="170" key="GridCell.Tab.0.bottom" timestamp="1612028826254">
+    <state width="1815" height="268" key="GridCell.Tab.0.bottom" timestamp="1612037190131">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="170" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1612028826254" />
-    <state width="1815" height="170" key="GridCell.Tab.0.center" timestamp="1612028826254">
+    <state width="1815" height="268" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1612037190131" />
+    <state width="1815" height="268" key="GridCell.Tab.0.center" timestamp="1612037190131">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="170" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1612028826254" />
-    <state width="1815" height="170" key="GridCell.Tab.0.left" timestamp="1612028826254">
+    <state width="1815" height="268" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1612037190131" />
+    <state width="1815" height="268" key="GridCell.Tab.0.left" timestamp="1612037190131">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="170" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1612028826254" />
-    <state width="1815" height="170" key="GridCell.Tab.0.right" timestamp="1612028826254">
+    <state width="1815" height="268" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1612037190131" />
+    <state width="1815" height="268" key="GridCell.Tab.0.right" timestamp="1612037190131">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="170" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1612028826254" />
+    <state width="1815" height="268" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1612037190131" />
     <state x="430" y="182" key="SettingsEditor" timestamp="1612026540784">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -443,6 +433,9 @@
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_moveTest.ic" NAME="SimulationServiceTests.moveTest Coverage Results" MODIFIED="1608922150962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SkmServiceTest.ic" NAME="SkmServiceTest Coverage Results" MODIFIED="1608819995284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$HumanControllerTest.ic" NAME="HumanControllerTest Coverage Results" MODIFIED="1608929541499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/skm_multiproject$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1612031512424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.edu.pjwstk.skmapi.serviceTests.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentServiceTest_CreateOrUpdateWithNoIdParameter.ic" NAME="CompartmentServiceTest.CreateOrUpdateWithNoIdParameter Coverage Results" MODIFIED="1608768612372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$SimulationServiceTests_removePassengersTest.ic" NAME="SimulationServiceTests.removePassengersTest Coverage Results" MODIFIED="1608901501887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/skm_multiproject$CompartmentControllerTest_addAccepted.ic" NAME="CompartmentControllerTest.addAccepted Coverage Results" MODIFIED="1608914833640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
