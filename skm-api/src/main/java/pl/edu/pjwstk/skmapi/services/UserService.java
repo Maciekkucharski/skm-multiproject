@@ -1,5 +1,6 @@
 package pl.edu.pjwstk.skmapi.services;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,6 +20,7 @@ import static pl.edu.pjwstk.skmapi.util.Utils.fallbackIfNull;
 @Service
 public class UserService extends CrudService<User> implements UserDetailsService  {
     private final PasswordEncoder passwordEncoder;
+
     public UserService(UserRepository repository) {
         super(repository);
         passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
@@ -42,7 +44,7 @@ public class UserService extends CrudService<User> implements UserDetailsService
     }
 
     @Override
-    public User createOrUpdate(User updateEntity) throws EmptyFieldException {
+    public User createOrUpdate(User updateEntity) {
         updateEntity.setPassword(passwordEncoder.encode(updateEntity.getPassword()));
         if (updateEntity.getId() == null) {
             return repository.save(updateEntity);

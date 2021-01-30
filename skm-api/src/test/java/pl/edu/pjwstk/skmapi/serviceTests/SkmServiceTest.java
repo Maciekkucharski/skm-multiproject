@@ -34,14 +34,12 @@ public class SkmServiceTest {
         Mockito.verify(repository).save(skm);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void CreateOrUpdateWithIdThrowsException() {
         Skm skm =  new Skm();
         skm.setId(1L);
         Mockito.when(repository.findById(1L)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.createOrUpdate(skm);
-        });
+        service.createOrUpdate(skm);
     }
 
     @Test
@@ -68,15 +66,13 @@ public class SkmServiceTest {
         Mockito.verify(repository).findById(1L);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void getByIdIncorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.getById(1l);
-        });
+        service.getById(1l);
         Mockito.verify(repository).findById(1L);
     }
-//
+
     @Test
     public void deleteCorrectlyTest() {
         Skm skm = new Skm();
@@ -87,12 +83,10 @@ public class SkmServiceTest {
         Mockito.verify(repository).delete(skm);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void deleteInCorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.delete(1l);
-        });
+        service.delete(1l);
         Mockito.verify(repository).findById(1L);
     }
 

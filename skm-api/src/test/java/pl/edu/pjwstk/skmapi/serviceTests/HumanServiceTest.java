@@ -42,12 +42,10 @@ public class HumanServiceTest {
         Mockito.verify(repository).findById(1L);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void getByIdIncorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.getById(1l);
-        });
+        service.getById(1l);
         Mockito.verify(repository).findById(1L);
     }
     //
@@ -61,12 +59,10 @@ public class HumanServiceTest {
         Mockito.verify(repository).delete(human);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void deleteInCorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.delete(1l);
-        });
+        service.delete(1l);
         Mockito.verify(repository).findById(1L);
     }
 

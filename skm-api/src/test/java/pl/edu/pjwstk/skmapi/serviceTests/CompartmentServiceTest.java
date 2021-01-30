@@ -38,14 +38,12 @@ public class CompartmentServiceTest {
     }
 
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void CreateOrUpdateWithIdThrowsException() {
         Compartment compartment =  new Compartment();
         compartment.setId(1L);
         Mockito.when(repository.findById(1L)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.createOrUpdate(compartment);
-        });
+        service.createOrUpdate(compartment);
     }
 
     @Test
@@ -72,12 +70,10 @@ public class CompartmentServiceTest {
         Mockito.verify(repository).findById(1L);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void getByIdIncorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.getById(1l);
-        });
+        service.getById(1l);
         Mockito.verify(repository).findById(1L);
     }
 
@@ -91,12 +87,10 @@ public class CompartmentServiceTest {
         Mockito.verify(repository).delete(compartment);
     }
 
-    @Test
+    @Test(expected = idNotFoundException.class)
     public void deleteInCorrectlyTest() {
         Mockito.when(repository.findById(1l)).thenReturn(Optional.empty());
-        Assert.assertThrows(idNotFoundException.class, () -> {
-            service.delete(1l);
-        });
+        service.delete(1l);
         Mockito.verify(repository).findById(1L);
     }
 
